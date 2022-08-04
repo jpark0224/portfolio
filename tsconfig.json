@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ],
+    "outDir": "./dist/",
+    "noImplicitAny": true,
     "target": "es5",
     "lib": [
       "dom",
@@ -18,7 +25,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "preserve"
   },
   "include": [
     "src"
