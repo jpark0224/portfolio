@@ -1,14 +1,39 @@
-body {
-  background-color: "#F0E1DE";
-  font-family: "Libre Baskerville", serif, "Montserrat", sans-serif;
+.contactsContainer {
+  background-color: #f0e1de;
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+  padding: 5rem 0 5rem 0;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
 }
 
 .formContainer {
-  --shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-  --radius: 10px;
+  --radius: 40px;
+  width: 40%;
+  padding: 2.5rem 6em;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: var(--radius);
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
 
-  padding: 1rem 2rem;
-  background-color: white;
+.subheading {
+  font-family: "Montserrat", sans-serif;
 }
 
 .formGroup {
@@ -16,8 +41,37 @@ body {
   margin-bottom: 1.5rem;
 }
 
-input {
+input,
+textarea {
   border: 0;
   outline: 0;
-  border-bottom: black;
+  border-bottom: 1px solid black;
+  background: transparent;
+}
+
+label {
+  display: inline-block;
+}
+
+.message {
+  height: 5rem;
+}
+
+.btn-primary {
+  background-color: #bf7373 !important;
+  border-color: #bf7373 !important;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+  background-color: #bf7373 !important;
+  filter: brightness(90%);
+  background-color: #bf7373 !important;
+}
+
+.submitButton {
+  width: fit-content;
+  align-self: center;
 }

@@ -36,41 +36,49 @@ const Contacts = () => {
   };
 
   return (
-    <>
-      <h1>Get In Touch</h1>
-      <Container>
-        <h5>I am open for a new opportunity</h5>
+    <Container fluid className="contactsContainer">
+      <h1 className="heading">Get In Touch</h1>
+      <h5 className="subheading">I am open for a new opportunity</h5>
+      <div className="links">
         <a href="https://www.linkedin.com/in/julie-park-developer/">
           <img alt="LinkedIn logo" src={LinkedInLogo} width="30" height="30" />
         </a>
         <a href="https://github.com/jpark0224">
           <img alt="LinkedIn logo" src={GithubLogo} width="30" height="30" />
         </a>
-        <Form onSubmit={submitHandler} className="formContainer">
-          <Stack direction="horizontal" gap={3}>
-            <Form.Group className="formGroup" controlId="name">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="John Doe / Jane Doe" />
-            </Form.Group>
-            <Form.Group className="formGroup" controlId="email">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
-            </Form.Group>
+      </div>
+      <Form onSubmit={submitHandler} className="formContainer">
+        <Stack direction="horizontal" gap={3}>
+          <Form.Group className="formGroup" controlId="name">
+            <Stack gap={2}>
+              <label>Name</label>
+              <input type="text" placeholder="John Doe / Jane Doe" />
+            </Stack>
+          </Form.Group>
+          <Form.Group className="formGroup" controlId="email">
+            <Stack gap={2}>
+              <label>Email address</label>
+              <input type="email" placeholder="name@example.com" />
+            </Stack>
+          </Form.Group>
+        </Stack>
+        <Form.Group className="formGroup" controlId="subject">
+          <Stack gap={2}>
+            <label>Subject</label>
+            <input type="text" placeholder="Let's work together" />
           </Stack>
-          <Form.Group className="formGroup" controlId="subject">
-            <Form.Label>Subject</Form.Label>
-            <Form.Control type="text" placeholder="Let's work together!" />
-          </Form.Group>
-          <Form.Group className="formGroup" controlId="message">
-            <Form.Label>Message</Form.Label>
-            <Form.Control as="textarea" rows={3} type="text" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Send Message
-          </Button>
-        </Form>
-      </Container>
-    </>
+        </Form.Group>
+        <Form.Group className="formGroup" controlId="message">
+          <Stack gap={2}>
+            <label>Message</label>
+            <textarea className="message" placeholder="Write something..." />
+          </Stack>
+        </Form.Group>
+        <Button className="submitButton" variant="primary" type="submit">
+          Send Message
+        </Button>
+      </Form>
+    </Container>
   );
 };
 
