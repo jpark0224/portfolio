@@ -3,6 +3,7 @@ import { Container, Form, Stack, Button } from "react-bootstrap";
 import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
 import "../styles.css";
+import "../Contacts.css";
 
 // import { useEffect, useState } from "react";
 // import "../../src/App.css";
@@ -37,9 +38,9 @@ const Contacts = () => {
 
   return (
     <Container fluid className="contactsContainer">
-      <h1 className="heading">Get In Touch</h1>
-      <h5 className="subheading">I am open for a new opportunity</h5>
-      <div className="links">
+      <h1 className="contactsHeading">Get In Touch</h1>
+      <h5 className="contactsSubheading">I am open for a new opportunity</h5>
+      <div className="contactsLinks">
         <a href="https://www.linkedin.com/in/julie-park-developer/">
           <img alt="LinkedIn logo" src={LinkedInLogo} width="30" height="30" />
         </a>

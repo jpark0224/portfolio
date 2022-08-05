@@ -1,0 +1,47 @@
+.heroContainer {
+  background-color: #f0e1de;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroLeftContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5vw;
+}
+
+.heroRightContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.heroLeftContents {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.heroButtonContainer {
+  display: flex;
+  column-gap: 3vw;
+}
+
+.profilePicture {
+  width: 35vw;
+}
+
+.heroHeading {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.heroSubheading {
+  font-size: 1.5rem;
+}

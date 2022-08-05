@@ -1,62 +1,3 @@
-.contactsContainer {
-  background-color: #f0e1de;
-  font-family: "Libre Baskerville", serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 1.5rem;
-  padding: 5rem 0 5rem 0;
-}
-
-.heading {
-  font-weight: bold;
-}
-
-.links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 5rem;
-}
-
-.formContainer {
-  --radius: 40px;
-  width: 40%;
-  padding: 2.5rem 6em;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: var(--radius);
-  font-family: "Montserrat", sans-serif;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-
-.subheading {
-  font-family: "Montserrat", sans-serif;
-}
-
-.formGroup {
-  border: none;
-  margin-bottom: 1.5rem;
-}
-
-input,
-textarea {
-  border: 0;
-  outline: 0;
-  border-bottom: 1px solid black;
-  background: transparent;
-}
-
-label {
-  display: inline-block;
-}
-
-.message {
-  height: 5rem;
-}
-
 .btn-primary {
   background-color: #bf7373 !important;
   border-color: #bf7373 !important;
@@ -69,9 +10,4 @@ label {
   background-color: #bf7373 !important;
   filter: brightness(90%);
   background-color: #bf7373 !important;
-}
-
-.submitButton {
-  width: fit-content;
-  align-self: center;
 }
