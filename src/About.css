@@ -1,0 +1,72 @@
+.aboutContainer {
+  background-color: #f0e1de;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.aboutLeftContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 5vw;
+  width: 50vw;
+}
+
+.aboutLeftContents {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.aboutRightContents {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.aboutRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5vw;
+  margin-right: 10vw;
+}
+
+.aboutButtonContainer {
+  display: flex;
+  column-gap: 3vw;
+}
+
+.aboutHeading {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+}
+
+.aboutSubheading {
+  font-size: 1.5rem;
+}
+
+.langIcon {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.langIconsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.langTextContainer {
+  display: flex;
+  flex-direction: column;
+}

@@ -39,7 +39,7 @@ const Contacts = () => {
   return (
     <Container fluid className="contactsContainer">
       <h1 className="contactsHeading">Get In Touch</h1>
-      <h5 className="contactsSubheading">I am open for a new opportunity</h5>
+      <h5 className="contactsSubheading">I am open for new opportunities</h5>
       <div className="contactsLinks">
         <a href="https://www.linkedin.com/in/julie-park-developer/">
           <img alt="LinkedIn logo" src={LinkedInLogo} width="30" height="30" />
