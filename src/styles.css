@@ -1,6 +1,7 @@
 .btn-primary {
   background-color: #bf7373 !important;
   border-color: #bf7373 !important;
+  min-width: 100px;
 }
 
 .btn-primary:hover,

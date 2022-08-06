@@ -1,0 +1,54 @@
+.workContainer {
+  background-color: #f0e1de;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5rem;
+  padding: 5rem 0 5rem 0;
+  height: 100vh;
+}
+
+.singleWorkContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.workLeftContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 2vw;
+}
+
+.workRightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  margin-left: 2vw;
+  margin-right: 10vw;
+}
+
+.workHeading {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+}
+
+.workSubheading {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.workButtonContainer {
+  display: flex;
+  column-gap: 3vw;
+}
+
+.workPicture {
+  width: 40vw;
+}

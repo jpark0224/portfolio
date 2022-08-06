@@ -1,19 +1,23 @@
 import React from "react";
 
 // import { useEffect, useState } from "react";
-// import "../../src/App.css";
+import "../Work.css";
 import { Container, Row, Col, Button, Stack } from "react-bootstrap";
 
 const Work = () => {
   return (
-    <Container>
-      <Row>
-        <h1>Portfolio</h1>
-        <Col>
-          <img src="https://via.placeholder.com/600x400.jpg"></img>
-        </Col>
-        <Col>
-          <h3>Find Me a Doc</h3>
+    <Container fluid className="workContainer">
+      <h1 className="workHeading">Portfolio</h1>
+      <article className="singleWorkContainer">
+        <div className="workLeftContainer">
+          <img
+            className="workPicture"
+            src="https://via.placeholder.com/600x400.jpg"
+            alt="sample picture of application"
+          ></img>
+        </div>
+        <div className="workRightContainer">
+          <h3 className="workSubheading">Find Me a Doc</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             posuere, massa eget rhoncus fringilla, libero urna egestas mauris,
@@ -23,12 +27,12 @@ const Work = () => {
             amet maximus elit finibus id. Maecenas in nisl in augue efficitur
             tempus. Nulla facilisis dolor sit amet aliquam rhoncus.
           </p>
-          <Stack direction="horizontal" gap={3}>
+          <div className="workButtonContainer">
             <Button>Visit</Button>
-            <Button>Case Study</Button>
-          </Stack>
-        </Col>
-      </Row>
+            <Button>GitHub</Button>
+          </div>
+        </div>
+      </article>
     </Container>
   );
 };
