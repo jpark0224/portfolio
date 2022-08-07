@@ -44,8 +44,8 @@
     ]
   },
   "devDependencies": {
-    "@types/node-sass": "^4.11.0",
-    "node-sass": "^4.12.0",
+    "@types/node-sass": "^v4.11.3",
+    "node-sass": "^v7.0.1",
     "css-loader": "^1.0.0",
     "css-modules-typescript-loader": "^2.0.1",
     "sass-loader": "^7.1.0",
