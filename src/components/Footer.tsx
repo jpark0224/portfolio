@@ -1,28 +1,37 @@
-import React from 'react';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import "bootstrap/dist/css/bootstrap.css";
+import "../Footer.css";
+import LinkedInLogo from "../assets/linkedin-5.png";
+import GithubLogo from "../assets/github.png";
+import logo from "../assets/logo-2.png";
 
-
-// import { useEffect, useState } from "react";
-// import "../../src/App.css";
-import { Container, Row, Col, Button, Stack } from "react-bootstrap";
-
-const Footer = () => {
+function Footer() {
   return (
-    <Container>
-    <Row>
-        <Col>
-            <Stack gap={3}>
-                <h1>Julie Park</h1>
-                <p>Junior Full-stack Web Developer</p>
-                    <Stack direction="horizontal" gap={3}>
-                        <Button>Portfolio</Button>
-                        <Button>Contact Me</Button>
-                    </Stack>
-            </Stack>
-        </Col>
-        <Col>2 of 2</Col>
-      </Row>
-    </Container>
+    <footer className="footer">
+      <Container className="footerContainer">
+        <Navbar.Brand className="footerCopyright" href="#home">
+          © Julie Park 2022
+        </Navbar.Brand>
+        <Nav className="justify-content-end" style={{ width: "100%" }}>
+          <div className="navLinksContainer">
+            <a href="https://www.linkedin.com/in/julie-park-developer/">
+              <img
+                className="navLinks"
+                alt="LinkedIn logo"
+                src={LinkedInLogo}
+              />
+            </a>
+            <a className="navLinks" href="https://github.com/jpark0224">
+              <img className="navLinks" alt="LinkedIn logo" src={GithubLogo} />
+            </a>
+          </div>
+        </Nav>
+      </Container>
+    </footer>
   );
-};
+}
 
-export default Footer
+export default Footer;
