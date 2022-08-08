@@ -2,8 +2,8 @@ import React, { useRef, useState } from "react";
 import { Container, Form, Stack, Button } from "react-bootstrap";
 import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
-import "../styles.css";
-import "../Contacts.css";
+import "../styles/styles.css";
+import "../styles/Contacts.css";
 
 // import { useEffect, useState } from "react";
 // import "../../src/App.css";

@@ -1,7 +1,7 @@
 import React from "react";
 
 // import { useEffect, useState } from "react";
-import "../About.css";
+import "../styles/About.css";
 import { Container, Row, Col, Button, Stack } from "react-bootstrap";
 
 const About = () => {

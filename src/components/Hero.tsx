@@ -1,7 +1,7 @@
 import React from "react";
 
 // import { useEffect, useState } from "react";
-import "../Hero.css";
+import "../styles/Hero.css";
 import { Container, Button } from "react-bootstrap";
 import ProfilePic from "../assets/profile-6.png";
 

@@ -1,7 +1,7 @@
 import React from "react";
 
 // import { useEffect, useState } from "react";
-import "../Work.css";
+import "../styles/Work.css";
 import { Container, Row, Col, Button, Stack } from "react-bootstrap";
 
 const Work = () => {

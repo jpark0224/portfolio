@@ -3,10 +3,9 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
-import "../Footer.css";
+import "../styles/Footer.css";
 import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
-import logo from "../assets/logo-2.png";
 
 function Footer() {
   return (
