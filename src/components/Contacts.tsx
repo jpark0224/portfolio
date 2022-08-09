@@ -1,39 +1,28 @@
 import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 import { Container, Form, Stack, Button } from "react-bootstrap";
 import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
 import "../styles/styles.css";
 import "../styles/Contacts.css";
 
-// import { useEffect, useState } from "react";
-// import "../../src/App.css";
-
 const Contacts = () => {
-  //   const textInputRef = useRef<HTMLInputElement>(null);
-
   const submitHandler = async (event: React.FormEvent) => {
     event.preventDefault();
-    const { name, email, subject, message } =
-      event.target as typeof event.target & {
-        name: { value: string };
-        email: { value: string };
-        subject: { value: string };
-        message: { value: string };
-      };
-    console.log(name.value, email.value, subject.value, message.value);
 
-    // await fetch("/route", {
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   method: "POST",
-    //   body: JSON.stringify({
-    //     name: name.value,
-    //     email: email.value,
-    //     subject: subject.value,
-    //     message: message.value,
-    //   }),
-    // });
+    const target = event.target as HTMLFormElement;
+
+    emailjs
+      .sendForm(
+        "service_e97l40t",
+        "template_nabei1w",
+        target,
+        "d0AM8epEJvAYCDe0r"
+      )
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => console.log(err));
   };
 
   return (
@@ -53,26 +42,38 @@ const Contacts = () => {
           <Form.Group className="formGroup" controlId="name">
             <Stack gap={2}>
               <label>Name</label>
-              <input type="text" placeholder="John Doe / Jane Doe" />
+              <input
+                type="text"
+                name="name"
+                placeholder="John Doe / Jane Doe"
+              />
             </Stack>
           </Form.Group>
           <Form.Group className="formGroup" controlId="email">
             <Stack gap={2}>
               <label>Email address</label>
-              <input type="email" placeholder="name@example.com" />
+              <input type="email" name="email" placeholder="name@example.com" />
             </Stack>
           </Form.Group>
         </Stack>
         <Form.Group className="formGroup" controlId="subject">
           <Stack gap={2}>
             <label>Subject</label>
-            <input type="text" placeholder="Let's work together" />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Let's work together"
+            />
           </Stack>
         </Form.Group>
         <Form.Group className="formGroup" controlId="message">
           <Stack gap={2}>
             <label>Message</label>
-            <textarea className="message" placeholder="Write something..." />
+            <textarea
+              className="message"
+              name="message"
+              placeholder="Write something..."
+            />
           </Stack>
         </Form.Group>
         <Button className="submitButton" variant="primary" type="submit">
