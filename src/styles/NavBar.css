@@ -3,11 +3,16 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.logo {
+  cursor: pointer;
+}
+
 .navBarBrand {
   font-family: "Libre Baskerville", serif;
   color: #bf7373;
   font-weight: 700;
   font-size: 19px;
+  cursor: pointer;
 }
 
 .navLinksContainer {
@@ -22,3 +27,24 @@
   width: 25px;
   height: 25px;
 }
+
+/* .navbar-nav .nav-link.active {
+  background-color: red;
+  border-bottom: 1px solid #333;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+} */

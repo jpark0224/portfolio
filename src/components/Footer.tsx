@@ -1,4 +1,5 @@
 import React from "react";
+import { animateScroll as scroll } from "react-scroll";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -8,10 +9,13 @@ import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
 
 function Footer() {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
   return (
     <footer className="footer">
       <Container className="footerContainer">
-        <Navbar.Brand className="footerCopyright" href="#home">
+        <Navbar.Brand className="footerCopyright" onClick={scrollToTop}>
           © Julie Park 2022
         </Navbar.Brand>
         <Nav className="justify-content-end" style={{ width: "100%" }}>
