@@ -15,6 +15,10 @@
   cursor: pointer;
 }
 
+.menuContainer {
+  gap: 20px;
+}
+
 .navLinksContainer {
   display: flex;
   gap: 20px;
@@ -28,57 +32,43 @@
   height: 25px;
 }
 
-/* .navbar-nav .nav-link.active {
-  background-color: red;
-  border-bottom: 1px solid #333;
-}
-
-
 /* nav button effects */
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
-.menu:hover .menu__link:not(:hover) {
-  --rLinkColor: var(--menuLinkColorUnactive, rgba(22, 22, 22, 0.35));
-}
-
-.text-underlined {
+.navItem {
   position: relative;
-  overflow: hidden;
-
-  will-change: color;
-  transition: color 0.25s ease-out;
 }
 
-.text-underlined::before,
-.text-underlined::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background-color: var(--textUnderlinedLineColor, currentColor);
+.navItem,
+.navItem:after {
+  transition: all 0.5s;
+}
+.navItem:hover {
+  color: #bf7373;
+  font-weight: bold;
+}
 
-  will-change: width;
-  transition: width 0.1s ease-out;
-
+.navItem:after {
   position: absolute;
+  top: 40px;
   bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: "";
+  color: transparent;
+  background: #bf7373;
+  height: 3px;
 }
-
-.text-underlined::before {
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.text-underlined::after {
-  right: 50%;
-  transform: translateX(50%);
-}
-
-.text-underlined:hover::before,
-.text-underlined:hover::after {
+.navItem:hover:after {
   width: 100%;
-  transition-duration: 0.2s;
+}
+.activeMenu {
+  text-decoration: none;
+  font-weight: bold;
+  color: #bf7373;
 }

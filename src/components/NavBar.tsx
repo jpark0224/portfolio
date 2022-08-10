@@ -31,51 +31,39 @@ function NavBar() {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="justify-content-end" style={{ width: "100%" }}>
+          <Nav
+            className="justify-content-end menuContainer"
+            style={{ width: "100%" }}
+          >
             <Link
-              activeClass="active"
+              activeClass="activeMenu"
               to="about"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
-              <Nav.Link
-                className="navItem menu__link r-link text-underlined"
-                href="about"
-              >
-                About
-              </Nav.Link>
+              <div className="navItem">About</div>
             </Link>
             <Link
-              activeClass="active"
+              activeClass="activeMenu"
               to="work"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
-              <Nav.Link
-                className="navItem menu__link r-link text-underlined"
-                href="work"
-              >
-                Work
-              </Nav.Link>
+              <div className="navItem">Work</div>
             </Link>
             <Link
-              activeClass="active"
+              activeClass="activeMenu"
               to="contacts"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
-              <Nav.Link
-                className="navItem menu__link r-link text-underlined"
-                href="contacts"
-              >
-                Contacts
-              </Nav.Link>
+              <div className="navItem">Contacts</div>
             </Link>
             <div className="navLinksContainer">
               <a href="https://www.linkedin.com/in/julie-park-developer/">
