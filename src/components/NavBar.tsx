@@ -40,7 +40,10 @@ function NavBar() {
               offset={-70}
               duration={500}
             >
-              <Nav.Link className="navItem" href="about">
+              <Nav.Link
+                className="navItem menu__link r-link text-underlined"
+                href="about"
+              >
                 About
               </Nav.Link>
             </Link>
@@ -52,7 +55,10 @@ function NavBar() {
               offset={-70}
               duration={500}
             >
-              <Nav.Link className="navItem" href="work">
+              <Nav.Link
+                className="navItem menu__link r-link text-underlined"
+                href="work"
+              >
                 Work
               </Nav.Link>
             </Link>
@@ -64,7 +70,10 @@ function NavBar() {
               offset={-70}
               duration={500}
             >
-              <Nav.Link className="navItem" href="contacts">
+              <Nav.Link
+                className="navItem menu__link r-link text-underlined"
+                href="contacts"
+              >
                 Contacts
               </Nav.Link>
             </Link>
