@@ -28,8 +28,8 @@ const Work = () => {
             tempus. Nulla facilisis dolor sit amet aliquam rhoncus.
           </p>
           <div className="workButtonContainer">
-            <Button>Visit</Button>
-            <Button>GitHub</Button>
+            <button>Visit</button>
+            <button>GitHub</button>
           </div>
         </div>
       </article>

@@ -19,6 +19,11 @@
   cursor: pointer;
 }
 
+.footerCopyright:hover {
+  transition: all 0.5s;
+  color: #a66363;
+}
+
 .navLinksContainer {
   display: flex;
   gap: 20px;

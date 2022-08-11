@@ -76,9 +76,9 @@ const Contacts = () => {
             />
           </Stack>
         </Form.Group>
-        <Button className="submitButton" variant="primary" type="submit">
+        <button className="submitButton" type="submit">
           Send Message
-        </Button>
+        </button>
       </Form>
     </Container>
   );

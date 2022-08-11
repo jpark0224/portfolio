@@ -50,6 +50,7 @@ a {
 
 .navItem {
   position: relative;
+  cursor: pointer;
 }
 
 .navItem,
@@ -81,4 +82,9 @@ a {
   text-decoration: none;
   font-weight: bold;
   color: #bf7373;
+}
+
+.navBarBrand:hover {
+  transition: all 0.5s;
+  color: #a66363;
 }

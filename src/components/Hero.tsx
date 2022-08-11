@@ -15,28 +15,22 @@ const Hero: React.FC = () => {
           <p className="heroSubheading">Junior Full-stack Web Developer</p>
           <div className="heroButtonContainer">
             <Link
-              activeClass="active"
               to="work"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
-              <Button className="navItem" href="work">
-                Portfolio
-              </Button>
+              <button>Portfolio</button>
             </Link>
             <Link
-              activeClass="active"
               to="contacts"
               spy={true}
               smooth={true}
               offset={-70}
               duration={500}
             >
-              <Button className="navItem" href="contacts">
-                Contact Me
-              </Button>
+              <button>Contact Me</button>
             </Link>
           </div>
         </div>

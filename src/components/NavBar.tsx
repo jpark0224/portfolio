@@ -71,7 +71,7 @@ function NavBar() {
               to="about"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               <div className="navItem">About</div>
@@ -81,7 +81,7 @@ function NavBar() {
               to="work"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               <div className="navItem">Work</div>
@@ -91,7 +91,7 @@ function NavBar() {
               to="contacts"
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               <div className="navItem">Contacts</div>
