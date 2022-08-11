@@ -104,7 +104,7 @@ function NavBar() {
                   src={LinkedInLogo}
                 />
               </a>
-              <a className="navLinks" href="https://github.com/jpark0224">
+              <a href="https://github.com/jpark0224">
                 <img
                   className="navLinks"
                   alt="LinkedIn logo"

@@ -31,10 +31,22 @@ const Contacts = () => {
       <h5 className="contactsSubheading">I am open for new opportunities</h5>
       <div className="contactsLinks">
         <a href="https://www.linkedin.com/in/julie-park-developer/">
-          <img alt="LinkedIn logo" src={LinkedInLogo} width="30" height="30" />
+          <img
+            className="linkLogos"
+            alt="LinkedIn logo"
+            src={LinkedInLogo}
+            width="30"
+            height="30"
+          />
         </a>
         <a href="https://github.com/jpark0224">
-          <img alt="LinkedIn logo" src={GithubLogo} width="30" height="30" />
+          <img
+            className="linkLogos"
+            alt="LinkedIn logo"
+            src={GithubLogo}
+            width="30"
+            height="30"
+          />
         </a>
       </div>
       <Form onSubmit={submitHandler} className="formContainer">

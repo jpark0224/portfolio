@@ -62,3 +62,9 @@ label {
   width: fit-content;
   align-self: center;
 }
+
+.linkLogos:hover {
+  filter: invert(47%) sepia(38%) saturate(414%) hue-rotate(314deg)
+    brightness(103%) contrast(104%);
+  transition: all 0.5s;
+}
