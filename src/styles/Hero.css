@@ -2,9 +2,14 @@
   background-color: #f0e1de;
   font-family: "Montserrat", sans-serif;
   display: flex;
+  flex-direction: column;
   height: 100vh;
   justify-content: center;
   align-items: center;
+}
+
+.heroMainContainer {
+  display: flex;
 }
 
 .heroLeftContainer {
@@ -32,8 +37,13 @@
   column-gap: 3vw;
 }
 
+.heroScrollContainer {
+  position: absolute;
+  bottom: 5vh;
+}
+
 .profilePicture {
-  width: 30vw;
+  width: 25vw;
 }
 
 .heroHeading {
@@ -44,4 +54,75 @@
 
 .heroSubheading {
   font-size: 1.5rem;
+}
+
+/* scroll down button */
+.scrollButton {
+  font-weight: normal 400 20px/1;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+}
+
+.scrollButton a {
+  position: relative;
+  padding-top: 80px;
+}
+
+.scrollButton a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.scrollButton a span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.scrollButton a span:nth-of-type(1) {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.scrollButton a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.scrollButton a span:nth-of-type(3) {
+  top: 32px;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

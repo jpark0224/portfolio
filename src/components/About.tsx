@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/ScrollEffects.css";
+import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 
 // import { useEffect, useState } from "react";
 import "../styles/About.css";

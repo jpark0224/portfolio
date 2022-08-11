@@ -29,7 +29,7 @@ function NavBar() {
 
   const navBar = useRef<HTMLElement>(null);
   window.onscroll = function () {
-    if (scrollPosition < 5) {
+    if (scrollPosition < 30) {
       setNavBarClass(" navBarTransparent");
     } else {
       setNavBarClass(" navBarBlurry");
