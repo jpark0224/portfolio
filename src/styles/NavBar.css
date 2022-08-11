@@ -1,6 +1,16 @@
 .navBar {
-  background-color: #f0e1de;
   font-family: "Montserrat", sans-serif;
+}
+
+.navBarTransparent {
+  background-color: transparent;
+}
+
+.navBarBlurry {
+  background-color: #f0e1ded0;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
 .logo {

@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
+import { useRef, useEffect, useState } from "react";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.css";
@@ -10,12 +11,42 @@ import GithubLogo from "../assets/github.png";
 import logo from "../assets/logo-2.png";
 
 function NavBar() {
+  const [navBarClass, setNavBarClass] = useState("");
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const navBar = useRef<HTMLElement>(null);
+  window.onscroll = function () {
+    if (scrollPosition < 5) {
+      setNavBarClass(" navBarTransparent");
+    } else {
+      setNavBarClass(" navBarBlurry");
+    }
+  };
+
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
   return (
-    <Navbar expand="lg" fixed="top" className="navBar">
+    <Navbar
+      expand="lg"
+      fixed="top"
+      className={"navBar" + navBarClass}
+      ref={navBar}
+    >
       <Container>
         <Navbar.Brand onClick={scrollToTop}>
           <img
