@@ -12,6 +12,8 @@ const Contacts = () => {
 
     const target = event.target as HTMLFormElement;
 
+    console.log(target);
+
     emailjs
       .sendForm(
         "service_e97l40t",
@@ -27,71 +29,134 @@ const Contacts = () => {
 
   return (
     <Container fluid className="contactsContainer">
-      <h1 className="contactsHeading">Get In Touch</h1>
-      <h5 className="contactsSubheading">I am open for new opportunities</h5>
-      <div className="contactsLinks">
-        <a href="https://www.linkedin.com/in/julie-park-developer/">
-          <img
-            className="linkLogos"
-            alt="LinkedIn logo"
-            src={LinkedInLogo}
-            width="30"
-            height="30"
-          />
-        </a>
-        <a href="https://github.com/jpark0224">
-          <img
-            className="linkLogos"
-            alt="LinkedIn logo"
-            src={GithubLogo}
-            width="30"
-            height="30"
-          />
-        </a>
-      </div>
-      <Form onSubmit={submitHandler} className="formContainer">
-        <Stack direction="horizontal" gap={3}>
-          <Form.Group className="formGroup" controlId="name">
-            <Stack gap={2}>
-              <label>Name</label>
-              <input
-                type="text"
-                name="name"
-                placeholder="John Doe / Jane Doe"
-              />
+      <section className="contactsMainContainer">
+        <section className="contactsLeftContainer">
+          <Form onSubmit={submitHandler} className="formContainer">
+            <Stack direction="horizontal" gap={3}>
+              <Form.Group className="formGroup" controlId="name">
+                <Stack gap={2}>
+                  <label className="formLabels">NAME</label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="John Doe / Jane Doe"
+                  />
+                </Stack>
+              </Form.Group>
+              <Form.Group className="formGroup" controlId="email">
+                <Stack gap={2}>
+                  <label className="formLabels">EMAIL ADDRESSS</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="name@example.com"
+                  />
+                </Stack>
+              </Form.Group>
             </Stack>
-          </Form.Group>
-          <Form.Group className="formGroup" controlId="email">
-            <Stack gap={2}>
-              <label>Email address</label>
-              <input type="email" name="email" placeholder="name@example.com" />
-            </Stack>
-          </Form.Group>
-        </Stack>
-        <Form.Group className="formGroup" controlId="subject">
-          <Stack gap={2}>
-            <label>Subject</label>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Let's work together"
-            />
-          </Stack>
-        </Form.Group>
-        <Form.Group className="formGroup" controlId="message">
-          <Stack gap={2}>
-            <label>Message</label>
-            <textarea
-              className="message"
-              name="message"
-              placeholder="Write something..."
-            />
-          </Stack>
-        </Form.Group>
-        <button className="submitButton" type="submit">
-          Send Message
-        </button>
-      </Form>
+            <Form.Group className="formGroup" controlId="subject">
+              <Stack gap={2}>
+                <label className="formLabels">SUBJECT</label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Let's work together"
+                />
+              </Stack>
+            </Form.Group>
+            <Form.Group className="formGroup" controlId="message">
+              <Stack gap={2}>
+                <label className="formLabels">MESSAGE</label>
+                <textarea
+                  className="message"
+                  name="message"
+                  placeholder="Write something..."
+                />
+              </Stack>
+            </Form.Group>
+            <button className="submitButton" type="submit">
+              Send Message
+            </button>
+          </Form>
+        </section>
+        <section className="contactsRightContainer">
+          <section className="contactsRightContents">
+            <h1 className="contactsHeading">Get In Touch</h1>
+            <h5 className="contactsSubheading">
+              I am open for new opportunities.
+            </h5>
+            <section className="contactsElementsContainer">
+              <a
+                className="contactsElements"
+                href="https://goo.gl/maps/HcpWDvAzFk1oCw7a7"
+              >
+                {/* location icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 contactsIcons"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  width="30"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <p>London, United Kingdom</p>
+              </a>
+              <a
+                className="contactsElements"
+                href="mailto:julieparksw@gmail.com"
+              >
+                {/* mail icon */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 contactsIcons"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  width="30"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696l-6-3.75a2 2 0 00-2.12 0l-6 3.75zm2.615 2.423a1 1 0 10-1.11 1.664l5 3.333a1 1 0 001.11 0l5-3.333a1 1 0 00-1.11-1.664L10 11.798 5.555 8.835z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <p>julieparksw@gmail.com</p>
+              </a>
+              <a
+                className="contactsElements"
+                href="https://www.linkedin.com/in/julie-park-developer/"
+              >
+                <img
+                  className="linkLogos"
+                  alt="LinkedIn logo"
+                  src={LinkedInLogo}
+                  width="27"
+                  height="27"
+                />
+                <p>linkedin.com/in/julie-park-developer/</p>
+              </a>
+
+              <a
+                className="contactsElements"
+                href="https://github.com/jpark0224"
+              >
+                <img
+                  className="linkLogos"
+                  alt="LinkedIn logo"
+                  src={GithubLogo}
+                  width="27"
+                  height="27"
+                />
+                <p>github.com/jpark0224</p>
+              </a>
+            </section>
+          </section>
+        </section>
+      </section>
     </Container>
   );
 };
