@@ -1,15 +1,37 @@
 import React from "react";
 import "../styles/ScrollEffects.css";
-import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+import { useParallax } from "react-scroll-parallax";
 
 // import { useEffect, useState } from "react";
 import "../styles/About.css";
 import { Container, Row, Col, Button, Stack } from "react-bootstrap";
 
 const About = () => {
+  const parallaxLeft = useParallax({
+    speed: 10,
+    translateY: [-20, 40],
+    easing: "easeOutQuad",
+  });
+
+  const parallaxRight = useParallax({
+    speed: 10,
+    translateY: [-20, 30],
+    easing: "easeOutQuad",
+  });
+
+  const parallaxIcons = useParallax({
+    speed: 20,
+    translateY: [-10, 10],
+    scale: [0.5, 1.2],
+    easing: "easeOutQuad",
+  });
+
   return (
     <Container fluid className="aboutContainer">
-      <section className="aboutLeftContainer">
+      <section
+        className="aboutLeftContainer"
+        ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
+      >
         <div className="aboutLeftContents">
           <h1 className="aboutHeading">About Me</h1>
           <p>
@@ -27,9 +49,15 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section className="aboutRightContainer">
+      <section
+        className="aboutRightContainer"
+        ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
+      >
         <div className="aboutRightContents">
-          <div className="langIconsContainer">
+          <div
+            className="langIconsContainer"
+            ref={parallaxIcons.ref as React.RefObject<HTMLDivElement>}
+          >
             <div className="iconRow">
               {/* basics */}
               <img

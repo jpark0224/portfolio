@@ -30,6 +30,7 @@
   display: flex;
   flex-direction: column;
   gap: 3vh;
+  min-width: 400px;
 }
 
 .heroButtonContainer {
@@ -124,5 +125,25 @@
   }
   100% {
     opacity: 0;
+  }
+}
+
+.typing-demo {
+  width: 25ch;
+  animation: typing 3.5s steps(30), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
   }
 }

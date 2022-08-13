@@ -12,7 +12,7 @@ const Work = () => {
         <div className="workLeftContainer">
           <img
             className="workPicture"
-            src="https://via.placeholder.com/600x400.jpg"
+            src="https://via.placeholder.com/480x270.jpg"
             alt="sample picture of application"
           ></img>
         </div>

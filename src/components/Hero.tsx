@@ -5,15 +5,27 @@ import "../styles/Hero.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { Container, Row } from "react-bootstrap";
 import ProfilePic from "../assets/profile-6.png";
+import { useParallax } from "react-scroll-parallax";
 
 const Hero: React.FC = () => {
+  const parallax = useParallax({
+    speed: 5,
+    translateY: [-100, 10],
+    easing: "easeOutQuad",
+  });
+
   return (
     <Container fluid className="heroContainer">
-      <section className="heroMainContainer">
+      <section
+        className="heroMainContainer"
+        ref={parallax.ref as React.RefObject<HTMLDivElement>}
+      >
         <section className="heroLeftContainer">
           <div className="heroLeftContents">
             <h1 className="heroHeading">Julie Park</h1>
-            <p className="heroSubheading">Junior Full-stack Web Developer</p>
+            <p className="heroSubheading typing-demo">
+              Junior Full-stack Web Developer
+            </p>
             <div className="heroButtonContainer">
               <Link
                 to="work"

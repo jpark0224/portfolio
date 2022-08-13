@@ -8,10 +8,11 @@ import Work from "./components/Work";
 import Contacts from "./components/Contacts";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const App: React.FC = () => {
   return (
-    <>
+    <ParallaxProvider>
       <div>
         <NavBar></NavBar>
         <Routes>
@@ -29,7 +30,7 @@ const App: React.FC = () => {
         <section id="contacts">{<Contacts />}</section>
         <section id="footer">{<Footer />}</section>
       </div>
-    </>
+    </ParallaxProvider>
   );
 };
 

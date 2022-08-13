@@ -1,17 +1,17 @@
 .aboutContainer {
   background-color: #f0e1de;
   font-family: "Montserrat", sans-serif;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
 }
 
 .aboutLeftContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin-left: 10vw;
+  margin-left: 20vw;
   margin-right: 5vw;
   width: 50vw;
 }
@@ -34,7 +34,7 @@
   justify-content: flex-start;
   align-items: center;
   margin-left: 5vw;
-  margin-right: 10vw;
+  margin-right: 20vw;
 }
 
 .aboutButtonContainer {
