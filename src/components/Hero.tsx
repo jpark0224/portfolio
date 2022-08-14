@@ -8,19 +8,21 @@ import ProfilePic from "../assets/profile-6.png";
 import { useParallax } from "react-scroll-parallax";
 
 const Hero: React.FC = () => {
-  const parallax = useParallax({
-    speed: 5,
-    translateY: [-100, 10],
-    easing: "easeOutQuad",
+  const parallaxLeft = useParallax({
+    translateX: [100, -100],
+  });
+
+  const parallaxRight = useParallax({
+    translateX: [-100, 100],
   });
 
   return (
     <Container fluid className="heroContainer">
-      <section
-        className="heroMainContainer"
-        ref={parallax.ref as React.RefObject<HTMLDivElement>}
-      >
-        <section className="heroLeftContainer">
+      <section className="heroMainContainer">
+        <section
+          className="heroLeftContainer"
+          ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
+        >
           <div className="heroLeftContents">
             <h1 className="heroHeading">Julie Park</h1>
             <p className="heroSubheading typing-demo">
@@ -48,7 +50,10 @@ const Hero: React.FC = () => {
             </div>
           </div>
         </section>
-        <section className="heroRightContainer">
+        <section
+          className="heroRightContainer"
+          ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
+        >
           <img
             src={ProfilePic}
             alt="profile picture"
