@@ -2,6 +2,7 @@
   background-color: #f0e1de;
   font-family: "Libre Baskerville", serif;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   row-gap: 1.5rem;
@@ -102,4 +103,80 @@ textarea {
   filter: invert(47%) sepia(38%) saturate(414%) hue-rotate(314deg)
     brightness(103%) contrast(104%);
   transition: all 0.5s;
+}
+
+/* scroll up button */
+.toTheTopContainer {
+  position: absolute;
+  padding-top: 90vh;
+}
+
+.toTheTopButton {
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal 400 20px/1;
+  letter-spacing: 0.1em;
+  font-size: 1.2rem;
+}
+
+.toTheTopButton a {
+  position: relative;
+  padding-top: 80px;
+}
+
+.toTheTopButton a:hover {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.toTheTopButton a span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-animation: sdb07 2s infinite;
+  animation: sdb07 2s infinite;
+  opacity: 0;
+  box-sizing: border-box;
+}
+.toTheTopButton a span:nth-of-type(1) {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.toTheTopButton a span:nth-of-type(2) {
+  top: 16px;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
+}
+.toTheTopButton a span:nth-of-type(3) {
+  top: 32px;
+  animation-delay: 0s;
+}
+@-webkit-keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb07 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }

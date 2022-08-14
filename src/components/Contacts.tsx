@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Container, Form, Stack, Button } from "react-bootstrap";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
 import "../styles/styles.css";
@@ -155,6 +157,15 @@ const Contacts = () => {
               </a>
             </section>
           </section>
+        </section>
+      </section>
+      <section className="toTheTopContainer">
+        <section className="toTheTopButton">
+          <Link to="hero" spy={true} smooth={true} offset={-70} duration={500}>
+            <span></span>
+            <span></span>
+            <span></span>To the top
+          </Link>
         </section>
       </section>
     </Container>
