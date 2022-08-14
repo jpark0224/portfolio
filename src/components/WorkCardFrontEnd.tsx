@@ -5,6 +5,7 @@ import "../styles/Work.css";
 import { Container, Row, Col, Button, Stack } from "react-bootstrap";
 
 interface workProps {
+  screenshot: string;
   title: string;
   description: string;
   demoLink: string;
@@ -17,7 +18,7 @@ const WorkCardFrontEnd: React.FC<workProps> = (props) => {
       <div className="workLeftContainer">
         <img
           className="workPicture"
-          src="https://via.placeholder.com/480x270.jpg"
+          src={props.screenshot}
           alt="sample picture of application"
         ></img>
       </div>

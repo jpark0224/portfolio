@@ -5,6 +5,7 @@ import "../styles/Work.css";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 
 interface workProps {
+  screenshot: string;
   title: string;
   description: string;
   demoLink: string;
@@ -18,7 +19,7 @@ const WorkCardFullStack: React.FC<workProps> = (props) => {
       <div className="workLeftContainer">
         <img
           className="workPicture"
-          src="https://via.placeholder.com/480x270.jpg"
+          src={props.screenshot}
           alt="sample picture of application"
         ></img>
       </div>
