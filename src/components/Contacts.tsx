@@ -11,11 +11,11 @@ import "../styles/Contacts.css";
 
 const Contacts = () => {
   const parallaxLeft = useParallax({
-    opacity: [0, 3],
+    translateX: [-100, 100],
   });
 
   const parallaxRight = useParallax({
-    opacity: [0, 3],
+    translateX: [100, -100],
   });
 
   const submitHandler = async (event: React.FormEvent) => {
