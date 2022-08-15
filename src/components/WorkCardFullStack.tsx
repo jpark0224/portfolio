@@ -3,6 +3,7 @@ import React from "react";
 // import { useEffect, useState } from "react";
 import "../styles/Work.css";
 import { DropdownButton, Dropdown } from "react-bootstrap";
+import { useParallax } from "react-scroll-parallax";
 
 interface workProps {
   screenshot: string;
@@ -14,8 +15,15 @@ interface workProps {
 }
 
 const WorkCardFullStack: React.FC<workProps> = (props) => {
+  const parallax = useParallax({
+    opacity: [0, 3],
+  });
+
   return (
-    <article className="singleWorkContainer">
+    <article
+      className="singleWorkContainer"
+      ref={parallax.ref as React.RefObject<HTMLDivElement>}
+    >
       <div className="workLeftContainer">
         <img
           className="workPicture"

@@ -1,10 +1,16 @@
-import React from "react";
+import React, {
+  ComponentElement,
+  ReactComponentElement,
+  ReactElement,
+  ReactHTMLElement,
+} from "react";
 
 // import { useEffect, useState } from "react";
 import "../styles/Work.css";
 import { Container, Row, Col, Button, Stack } from "react-bootstrap";
 import WorkCardFrontEnd from "./WorkCardFrontEnd";
 import WorkCardFullStack from "./WorkCardFullStack";
+import { useParallax } from "react-scroll-parallax";
 import BabyShark from "../assets/baby-shark.png";
 import FindMeADoc from "../assets/find-me-a-doc.png";
 import SpaceCalendar from "../assets/space-calendar.png";

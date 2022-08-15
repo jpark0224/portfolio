@@ -8,7 +8,7 @@ import "../styles/NavBar.css";
 import { Link, animateScroll as scroll } from "react-scroll";
 import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
-import logo from "../assets/logo-2.png";
+import logo from "../assets/logo.png";
 
 function NavBar() {
   const [navBarClass, setNavBarClass] = useState("");
@@ -51,8 +51,8 @@ function NavBar() {
         <Navbar.Brand onClick={scrollToTop}>
           <img
             src={logo}
-            width="30"
-            height="30"
+            width="40"
+            height="40"
             className="d-inline-block align-top logo"
             alt="logo"
           />

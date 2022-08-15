@@ -4,19 +4,15 @@ import { useParallax } from "react-scroll-parallax";
 
 // import { useEffect, useState } from "react";
 import "../styles/About.css";
-import { Container, Row, Col, Button, Stack } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 const About = () => {
   const parallaxLeft = useParallax({
-    speed: 10,
-    translateY: [-20, 40],
-    easing: "easeOutQuad",
+    opacity: [0, 4],
   });
 
   const parallaxRight = useParallax({
-    speed: 10,
-    translateY: [-20, 30],
-    easing: "easeOutQuad",
+    opacity: [0, 4],
   });
 
   const parallaxIcons = useParallax({
@@ -28,13 +24,10 @@ const About = () => {
 
   return (
     <Container fluid className="aboutContainer">
-      <section
-        className="aboutLeftContainer"
-        ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
-      >
+      <section className="aboutLeftContainer">
         <div className="aboutLeftContents">
           <h1 className="aboutHeading">About Me</h1>
-          <p>
+          <p ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
             posuere, massa eget rhoncus fringilla, libero urna egestas mauris,
             sit amet ullamcorper mauris metus a nibh. Proin sit amet elementum
@@ -49,10 +42,7 @@ const About = () => {
           </p>
         </div>
       </section>
-      <section
-        className="aboutRightContainer"
-        ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
-      >
+      <section className="aboutRightContainer">
         <div className="aboutRightContents">
           <div
             className="langIconsContainer"
@@ -165,7 +155,10 @@ const About = () => {
               /> */}
             </div>
           </div>
-          <div className="langTextContainer">
+          <div
+            className="langTextContainer"
+            ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
+          >
             <h5>Languages and Frameworks: </h5>
             <p>
               JavaScript, Python, HTML, CSS, React, jQuery, Node.js, Express.js,

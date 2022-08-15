@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { Container, Form, Stack, Button } from "react-bootstrap";
 import { Link, animateScroll as scroll } from "react-scroll";
+import { useParallax } from "react-scroll-parallax";
 
 import LinkedInLogo from "../assets/linkedin-5.png";
 import GithubLogo from "../assets/github.png";
@@ -9,6 +10,14 @@ import "../styles/styles.css";
 import "../styles/Contacts.css";
 
 const Contacts = () => {
+  const parallaxLeft = useParallax({
+    opacity: [0, 3],
+  });
+
+  const parallaxRight = useParallax({
+    opacity: [0, 3],
+  });
+
   const submitHandler = async (event: React.FormEvent) => {
     event.preventDefault();
 
@@ -32,7 +41,10 @@ const Contacts = () => {
   return (
     <Container fluid className="contactsContainer">
       <section className="contactsMainContainer">
-        <section className="contactsLeftContainer">
+        <section
+          className="contactsLeftContainer"
+          ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
+        >
           <Form onSubmit={submitHandler} className="formContainer">
             <Stack direction="horizontal" gap={3}>
               <Form.Group className="formGroup" controlId="name">
@@ -87,7 +99,10 @@ const Contacts = () => {
             <h5 className="contactsSubheading">
               I am open for new opportunities.
             </h5>
-            <section className="contactsElementsContainer">
+            <section
+              className="contactsElementsContainer"
+              ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
+            >
               <a
                 className="contactsElements"
                 href="https://goo.gl/maps/HcpWDvAzFk1oCw7a7"
