@@ -25,14 +25,21 @@ const WorkCardFullStack: React.FC<workProps> = (props) => {
       ref={parallax.ref as React.RefObject<HTMLDivElement>}
     >
       <div className="workLeftContainer">
-        <img
-          className="workPicture"
-          src={props.screenshot}
-          alt="sample picture of application"
-        ></img>
+        <a href={props.demoLink} target="_blank">
+          <div className="zoom">
+            <img
+              className="workPicture"
+              src={props.screenshot}
+              alt="sample picture of application"
+            ></img>
+          </div>
+        </a>
       </div>
+
       <div className="workRightContainer">
-        <h3 className="workSubheading">{props.title}</h3>
+        <a href={props.demoLink} target="_blank" className="workSubheading">
+          <h3>{props.title}</h3>
+        </a>
         <p>{props.description}</p>
         <div className="workButtonContainer">
           <a href={props.demoLink} target="_blank">

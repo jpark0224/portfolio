@@ -49,10 +49,6 @@
   column-gap: 3vw;
 }
 
-.workPicture {
-  width: 40vw;
-}
-
 .btn-custom {
   cursor: pointer;
   outline: 0;
@@ -71,4 +67,31 @@
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   overflow: hidden;
   min-width: 120px;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+.workSubheading:hover {
+  color: #bf7373;
+  transition: all 0.5s;
+}
+
+.zoom {
+  width: 40vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.zoom img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+  transform: scale(1.1);
 }
