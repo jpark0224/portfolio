@@ -46,13 +46,13 @@
 }
 
 .contactsElements:hover {
-  filter: invert(47%) sepia(38%) saturate(414%) hue-rotate(314deg)
-    brightness(103%) contrast(104%);
+  color: #bf7373;
+  transition: all 0.5s;
 }
 
 .contactsElements p {
   margin: 0;
-  padding: 0;
+  padding: 4px 0 0 0;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -97,12 +97,6 @@ textarea {
 .submitButton {
   width: fit-content;
   align-self: center;
-}
-
-.linkLogos:hover {
-  filter: invert(47%) sepia(38%) saturate(414%) hue-rotate(314deg)
-    brightness(103%) contrast(104%);
-  transition: all 0.5s;
 }
 
 /* scroll up button */
