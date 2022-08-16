@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 
 import { Routes, Route } from "react-router-dom";
 import { ParallaxProvider } from "react-scroll-parallax";
@@ -12,19 +13,13 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const App: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <ParallaxProvider>
-      <div>
-        <NavBar></NavBar>
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/hero" element={<Hero />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/work" element={<Work />} />
-          <Route path="/contacts" element={<Contacts />} />
-          <Route path="/footer" element={<Footer />} />
-        </Routes>
-      </div>
+      <NavBar></NavBar>
       <div>
         <section id="hero">{<Hero />}</section>
         <section id="about">{<About />}</section>
