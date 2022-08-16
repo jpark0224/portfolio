@@ -7,6 +7,10 @@ import { useParallax } from "react-scroll-parallax";
 import "../styles/styles.css";
 import "../styles/Contacts.css";
 
+import * as dotenv from "dotenv";
+
+dotenv.config();
+
 const Contacts = () => {
   const parallaxLeft = useParallax({
     translateX: [-100, 100],
@@ -25,10 +29,10 @@ const Contacts = () => {
 
     emailjs
       .sendForm(
-        "service_e97l40t",
-        "template_nabei1w",
+        process.env.REACT_APP_EMAIL_API_SERVICE_KEY as string,
+        process.env.REACT_APP_EMAIL_API_TEMPLATE_KEY as string,
         target,
-        "d0AM8epEJvAYCDe0r"
+        process.env.REACT_APP_EMAIL_API_USER_KEY as string
       )
       .then((res) => {
         console.log(res);

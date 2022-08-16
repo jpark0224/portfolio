@@ -8,6 +8,8 @@ import Work from "./components/Work";
 import Contacts from "./components/Contacts";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import * as dotenv from "dotenv";
+dotenv.config();
 
 const App: React.FC = () => {
   return (
