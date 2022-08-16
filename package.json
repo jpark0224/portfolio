@@ -55,7 +55,6 @@
     "@types/node": "^18.7.5",
     "@types/node-sass": "^v4.11.3",
     "@types/react-scroll": "^1.8.4",
-    "@types/webpack-dev-server": "^4.7.2",
     "css-loader": "^1.0.0",
     "css-modules-typescript-loader": "^2.0.1",
     "sass": "^1.54.4",
