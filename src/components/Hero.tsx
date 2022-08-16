@@ -8,11 +8,12 @@ import { useParallax } from "react-scroll-parallax";
 
 const Hero: React.FC = () => {
   const parallaxLeft = useParallax({
-    translateX: [100, -100],
+    translateX: [100, -80],
   });
 
   const parallaxRight = useParallax({
-    translateX: [-100, 100],
+    translateX: [-100, 80],
+    rootMargin: { top: 0, right: 0, bottom: 0, left: 0 },
   });
 
   return (
