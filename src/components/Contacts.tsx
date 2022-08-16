@@ -1,11 +1,9 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import emailjs from "emailjs-com";
-import { Container, Form, Stack, Button } from "react-bootstrap";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Container, Form, Stack } from "react-bootstrap";
+import { Link } from "react-scroll";
 import { useParallax } from "react-scroll-parallax";
 
-import LinkedInLogo from "../assets/linkedin-5.png";
-import GithubLogo from "../assets/github.png";
 import "../styles/styles.css";
 import "../styles/Contacts.css";
 

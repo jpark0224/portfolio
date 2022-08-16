@@ -128,7 +128,7 @@
   }
 }
 
-.typing-demo {
+.typing {
   width: 25ch;
   animation: typing 3s steps(40), blink 0.5s step-end infinite alternate;
   white-space: nowrap;

@@ -1,9 +1,8 @@
 import React from "react";
 
-// import { useEffect, useState } from "react";
 import "../styles/Hero.css";
-import { Link, animateScroll as scroll } from "react-scroll";
-import { Container, Row } from "react-bootstrap";
+import { Link } from "react-scroll";
+import { Container } from "react-bootstrap";
 import ProfilePic from "../assets/profile-6.png";
 import { useParallax } from "react-scroll-parallax";
 
@@ -25,7 +24,7 @@ const Hero: React.FC = () => {
         >
           <div className="heroLeftContents">
             <h1 className="heroHeading">Julie Park</h1>
-            <p className="heroSubheading typing-demo">
+            <p className="heroSubheading typing">
               Junior Full-stack Web Developer
             </p>
             <div className="heroButtonContainer">

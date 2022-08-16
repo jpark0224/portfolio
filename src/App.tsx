@@ -1,14 +1,13 @@
 import React from "react";
-// import ScriptTag from "react-script-tag";
 
 import { Routes, Route } from "react-router-dom";
+import { ParallaxProvider } from "react-scroll-parallax";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Work from "./components/Work";
 import Contacts from "./components/Contacts";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import { ParallaxProvider } from "react-scroll-parallax";
 
 const App: React.FC = () => {
   return (

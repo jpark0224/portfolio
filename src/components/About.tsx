@@ -1,9 +1,6 @@
 import React from "react";
-import "../styles/ScrollEffects.css";
-import { useParallax } from "react-scroll-parallax";
-
-// import { useEffect, useState } from "react";
 import "../styles/About.css";
+import { useParallax } from "react-scroll-parallax";
 import { Container } from "react-bootstrap";
 
 const About = () => {
@@ -27,19 +24,35 @@ const About = () => {
       <section className="aboutLeftContainer">
         <div className="aboutLeftContents">
           <h1 className="aboutHeading">About Me</h1>
-          <p ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            posuere, massa eget rhoncus fringilla, libero urna egestas mauris,
-            sit amet ullamcorper mauris metus a nibh. Proin sit amet elementum
-            quam. Phasellus laoreet fringilla ex sit amet ultrices. Nullam vitae
-            ligula vel quam dictum condimentum. Nunc tempor condimentum sem, sit
-            amet maximus elit finibus id. Maecenas in nisl in augue efficitur
-            tempus. Nulla facilisis dolor sit amet aliquam rhoncus. Vivamus non
-            erat quis eros tempor vehicula. Vivamus finibus rutrum sapien, quis
-            euismod orci eleifend ut. Donec justo neque, pharetra at dolor quis,
-            finibus eleifend mi. Proin tempor tellus lorem, vel luctus ex mollis
-            eget.
-          </p>
+          <div ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}>
+            <p>
+              Hello! I am Julie, Junior Full-stack Web Developer who finished
+              General Assembly's Software Engineering Immersive course in May
+              2022. My interest in web development started back in the early
+              2000s when I built a fan page, which taught me the basics of HTML
+              and JavaScript.
+            </p>
+
+            <p>
+              I am passionate in tackling real-life problems through
+              technologies. My focus is to build products that empowers service
+              users by providing accessible and cost-effective services with
+              reduced admin burden and the need for physical presence.
+            </p>
+
+            <p>
+              Prior to my current role, I've worked as a Social Worker and
+              Psychotherapist, helping over a hundred of patients to overcome
+              challenges in their lives by arranging care and providing talking
+              therapies — which skill set I am excited to bring over to the
+              world of technologies.
+            </p>
+
+            <p>
+              Please don't hesitate to contact me if you think my skills and
+              experience are a good match.
+            </p>
+          </div>
         </div>
       </section>
       <section className="aboutRightContainer">

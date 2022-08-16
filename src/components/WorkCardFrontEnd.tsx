@@ -1,8 +1,5 @@
 import React from "react";
-
-// import { useEffect, useState } from "react";
 import "../styles/Work.css";
-import { Container, Row, Col, Button, Stack } from "react-bootstrap";
 import { useParallax } from "react-scroll-parallax";
 
 interface workProps {
