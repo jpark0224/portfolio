@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "types": ["node"],
+    "types": ["node", "react/next", "react-dom/next"],
     "plugins": [
       {
         "name": "typescript-plugin-css-modules"

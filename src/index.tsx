@@ -1,15 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import "./styles/index.css";
+import ReactDOM from "react-dom/client";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import * as dotenv from "dotenv";
 
-ReactDOM.render(
+const rootElement = document.getElementById("root");
+if (!rootElement) throw new Error("Failed to find the root element");
+const root = ReactDOM.createRoot(rootElement);
+root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById("root") as HTMLElement
+  </React.StrictMode>
 );
