@@ -83,7 +83,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     transform: none !important;
     opacity: 1 !important;
   }
-} */
+}
 
 /* Large devices (desktops, 992px and up) */
 /* @media (min-width: 992px) {

@@ -77,8 +77,6 @@ const Hero: React.FC = () => {
           </div>
         </Col>
         <Col
-          xs={{ order: "first" }}
-          sm={{ order: "first" }}
           className="heroRightContainer"
           ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
         >
