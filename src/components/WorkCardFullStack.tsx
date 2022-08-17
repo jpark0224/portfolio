@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Work.css";
 import { DropdownButton, Dropdown } from "react-bootstrap";
 import { useParallax } from "react-scroll-parallax";
+import { useEffect, useState } from "react";
 
 interface workProps {
   screenshot: string;
@@ -13,8 +14,32 @@ interface workProps {
 }
 
 const WorkCardFullStack: React.FC<workProps> = (props) => {
+  const [parallaxDisabled, setParallaxDisabled] = useState(true);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const parallax = useParallax({
+    disabled: parallaxDisabled,
     opacity: [0, 3],
+  });
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth < 768) {
+      setParallaxDisabled(true);
+    } else {
+      setParallaxDisabled(false);
+    }
+    // console.log(screenWidth, parallaxDisabled);
   });
 
   return (

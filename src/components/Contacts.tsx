@@ -3,6 +3,7 @@ import emailjs from "emailjs-com";
 import { Container, Form, Stack } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { useParallax } from "react-scroll-parallax";
+import { useEffect, useState } from "react";
 
 import "../styles/styles.css";
 import "../styles/Contacts.css";
@@ -12,12 +13,37 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 const Contacts = () => {
+  const [parallaxDisabled, setParallaxDisabled] = useState(true);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const parallaxLeft = useParallax({
+    disabled: parallaxDisabled,
     translateX: [-100, 100],
   });
 
   const parallaxRight = useParallax({
+    disabled: parallaxDisabled,
     translateX: [100, -100],
+  });
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth < 768) {
+      setParallaxDisabled(true);
+    } else {
+      setParallaxDisabled(false);
+    }
+    // console.log(screenWidth, parallaxDisabled);
   });
 
   const submitHandler = async (event: React.FormEvent) => {

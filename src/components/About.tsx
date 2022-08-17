@@ -2,21 +2,49 @@ import React from "react";
 import "../styles/About.css";
 import { useParallax } from "react-scroll-parallax";
 import { Container } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
-const About = () => {
+const About: React.FC = () => {
+  const [parallaxDisabled, setParallaxDisabled] = useState(true);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const parallaxLeft = useParallax({
+    disabled: parallaxDisabled,
     opacity: [0, 4],
   });
 
   const parallaxRight = useParallax({
+    disabled: parallaxDisabled,
+
     opacity: [0, 4],
   });
 
   const parallaxIcons = useParallax({
+    disabled: parallaxDisabled,
     speed: 20,
     translateY: [-10, 10],
     scale: [0.5, 1.2],
     easing: "easeOutQuad",
+  });
+
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth < 768) {
+      setParallaxDisabled(true);
+    } else {
+      setParallaxDisabled(false);
+    }
+    // console.log(screenWidth, parallaxDisabled);
   });
 
   return (
