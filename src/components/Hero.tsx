@@ -13,13 +13,12 @@ const Hero: React.FC = () => {
 
   const parallaxLeft = useParallax({
     disabled: parallaxDisabled,
-    translateX: [100, -80],
+    translateX: [60, -50],
   });
 
   const parallaxRight = useParallax({
     disabled: parallaxDisabled,
-    translateX: [-100, 80],
-    rootMargin: { top: 0, right: 0, bottom: 0, left: 0 },
+    translateX: [-50, 40],
   });
 
   const handleResize = () => {

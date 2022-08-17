@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Container, Form, Stack } from "react-bootstrap";
+import { Container, Form, Row, Col, Stack } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { useParallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
@@ -18,12 +18,12 @@ const Contacts = () => {
 
   const parallaxLeft = useParallax({
     disabled: parallaxDisabled,
-    translateX: [-100, 100],
+    translateX: [-40, 50],
   });
 
   const parallaxRight = useParallax({
     disabled: parallaxDisabled,
-    translateX: [100, -100],
+    translateX: [40, -40],
   });
 
   const handleResize = () => {
@@ -38,7 +38,7 @@ const Contacts = () => {
   }, []);
 
   useEffect(() => {
-    if (screenWidth < 768) {
+    if (screenWidth < 1116) {
       setParallaxDisabled(true);
     } else {
       setParallaxDisabled(false);
@@ -68,68 +68,16 @@ const Contacts = () => {
 
   return (
     <Container fluid className="contactsContainer">
-      <section className="contactsMainContainer">
-        <section
-          className="contactsLeftContainer"
-          ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
-        >
-          <Form onSubmit={submitHandler} className="formContainer">
-            <Stack direction="horizontal" gap={3}>
-              <Form.Group className="formGroup" controlId="name">
-                <Stack gap={2}>
-                  <label className="formLabels">NAME</label>
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="John Doe / Jane Doe"
-                  />
-                </Stack>
-              </Form.Group>
-              <Form.Group className="formGroup" controlId="email">
-                <Stack gap={2}>
-                  <label className="formLabels">EMAIL ADDRESSS</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="name@example.com"
-                  />
-                </Stack>
-              </Form.Group>
-            </Stack>
-            <Form.Group className="formGroup" controlId="subject">
-              <Stack gap={2}>
-                <label className="formLabels">SUBJECT</label>
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Let's work together"
-                />
-              </Stack>
-            </Form.Group>
-            <Form.Group className="formGroup" controlId="message">
-              <Stack gap={2}>
-                <label className="formLabels">MESSAGE</label>
-                <textarea
-                  className="message"
-                  name="message"
-                  placeholder="Write something..."
-                />
-              </Stack>
-            </Form.Group>
-            <button className="submitButton" type="submit">
-              Send Message
-            </button>
-          </Form>
-        </section>
-        <section className="contactsRightContainer">
-          <section className="contactsRightContents">
+      <Row className="contactsMainContainer">
+        <Col className="contactsLeftContainer" lg={true}>
+          <section className="contactsLeftContents">
             <h1 className="contactsHeading">Get In Touch</h1>
             <h5 className="contactsSubheading">
               I am open for new opportunities.
             </h5>
             <section
               className="contactsElementsContainer"
-              ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
+              ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
             >
               <a
                 className="contactsElements"
@@ -195,8 +143,61 @@ const Contacts = () => {
               </a>
             </section>
           </section>
-        </section>
-      </section>
+        </Col>
+        <Col
+          className="contactsRightContainer"
+          lg={true}
+          ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
+        >
+          <Form onSubmit={submitHandler} className="formContainer">
+            <Stack direction="horizontal" gap={3}>
+              <Form.Group className="formGroup" controlId="name">
+                <Stack gap={2}>
+                  <label className="formLabels">NAME</label>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="John Doe / Jane Doe"
+                  />
+                </Stack>
+              </Form.Group>
+              <Form.Group className="formGroup" controlId="email">
+                <Stack gap={2}>
+                  <label className="formLabels">EMAIL ADDRESSS</label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="name@example.com"
+                  />
+                </Stack>
+              </Form.Group>
+            </Stack>
+            <Form.Group className="formGroup" controlId="subject">
+              <Stack gap={2}>
+                <label className="formLabels">SUBJECT</label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Let's work together"
+                />
+              </Stack>
+            </Form.Group>
+            <Form.Group className="formGroup" controlId="message">
+              <Stack gap={2}>
+                <label className="formLabels">MESSAGE</label>
+                <textarea
+                  className="message"
+                  name="message"
+                  placeholder="Write something..."
+                />
+              </Stack>
+            </Form.Group>
+            <button className="submitButton" type="submit">
+              Send Message
+            </button>
+          </Form>
+        </Col>
+      </Row>
       <section className="toTheTopContainer">
         <section className="toTheTopButton">
           <Link to="hero" spy={true} smooth={true} offset={-70} duration={500}>
