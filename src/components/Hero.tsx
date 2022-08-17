@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
   }, []);
 
   useEffect(() => {
-    if (screenWidth < 768) {
+    if (screenWidth < 1116) {
       setParallaxDisabled(true);
     } else {
       setParallaxDisabled(false);

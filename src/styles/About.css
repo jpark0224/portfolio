@@ -7,13 +7,16 @@
   align-items: center;
 }
 
+.aboutContentsContainer {
+  display: flex;
+  gap: 5vw;
+  width: 70vw;
+}
+
 .aboutLeftContainer {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin-left: 15vw;
-  margin-right: 2vw;
-  width: 50vw;
+  justify-content: center;
 }
 
 .aboutLeftContents {
@@ -22,19 +25,18 @@
   gap: 3vh;
 }
 
-.aboutRightContents {
-  display: flex;
-  flex-direction: column;
-  gap: 3vh;
-}
-
 .aboutRightContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  margin-left: 2vw;
-  margin-right: 15vw;
+  justify-content: center;
+}
+
+.aboutRightContents {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3vh;
 }
 
 .aboutButtonContainer {

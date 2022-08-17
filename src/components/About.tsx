@@ -49,7 +49,7 @@ const About: React.FC = () => {
 
   return (
     <Container fluid className="aboutContainer">
-      <Row>
+      <Row className="aboutContentsContainer">
         <Col className="aboutLeftContainer" lg={true}>
           <div className="aboutLeftContents">
             <h1 className="aboutHeading">About Me</h1>
