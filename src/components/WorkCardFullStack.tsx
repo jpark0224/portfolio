@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Work.css";
-import { DropdownButton, Dropdown } from "react-bootstrap";
+import { Container, Col, Row, DropdownButton, Dropdown } from "react-bootstrap";
 import { useParallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
 
@@ -43,42 +43,44 @@ const WorkCardFullStack: React.FC<workProps> = (props) => {
   });
 
   return (
-    <article
+    <Container
       className="singleWorkContainer"
       ref={parallax.ref as React.RefObject<HTMLDivElement>}
     >
-      <div className="workLeftContainer">
-        <a href={props.demoLink} target="_blank">
-          <div className="zoom">
-            <img
-              className="workPicture"
-              src={props.screenshot}
-              alt="sample picture of application"
-            ></img>
-          </div>
-        </a>
-      </div>
-
-      <div className="workRightContainer">
-        <a href={props.demoLink} target="_blank" className="workSubheading">
-          <h3>{props.title}</h3>
-        </a>
-        <p>{props.description}</p>
-        <div className="workButtonContainer">
+      <Row className="workMainContainer">
+        <Col className="workLeftContainer">
           <a href={props.demoLink} target="_blank">
-            <button>Visit</button>
+            <div className="zoom">
+              <img
+                className="workPicture"
+                src={props.screenshot}
+                alt="sample picture of application"
+              ></img>
+            </div>
           </a>
-          <DropdownButton bsPrefix="custom" title="GitHub">
-            <Dropdown.Item href={props.githubFELink} target="_blank">
-              Front End
-            </Dropdown.Item>
-            <Dropdown.Item href={props.githubBELink} target="_blank">
-              Back End
-            </Dropdown.Item>
-          </DropdownButton>
-        </div>
-      </div>
-    </article>
+        </Col>
+
+        <Col className="workRightContainer">
+          <a href={props.demoLink} target="_blank" className="workSubheading">
+            <h3>{props.title}</h3>
+          </a>
+          <p>{props.description}</p>
+          <div className="workButtonContainer">
+            <a href={props.demoLink} target="_blank">
+              <button>Visit</button>
+            </a>
+            <DropdownButton bsPrefix="custom" title="GitHub">
+              <Dropdown.Item href={props.githubFELink} target="_blank">
+                Front End
+              </Dropdown.Item>
+              <Dropdown.Item href={props.githubBELink} target="_blank">
+                Back End
+              </Dropdown.Item>
+            </DropdownButton>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

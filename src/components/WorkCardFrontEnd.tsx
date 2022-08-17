@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/Work.css";
 import { useParallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 
 interface workProps {
   screenshot: string;
@@ -41,36 +42,38 @@ const WorkCardFrontEnd: React.FC<workProps> = (props) => {
   });
 
   return (
-    <article
+    <Container
       className="singleWorkContainer"
       ref={parallax.ref as React.RefObject<HTMLDivElement>}
     >
-      <div className="workLeftContainer">
-        <a href={props.demoLink} target="_blank">
-          <div className="zoom">
-            <img
-              className="workPicture"
-              src={props.screenshot}
-              alt="sample picture of application"
-            ></img>
-          </div>
-        </a>
-      </div>
-      <div className="workRightContainer">
-        <a href={props.demoLink} target="_blank" className="workSubheading">
-          <h3>{props.title}</h3>
-        </a>
-        <p>{props.description}</p>
-        <div className="workButtonContainer">
+      <Row className="workMainContainer">
+        <Col className="workLeftContainer" lg={true}>
           <a href={props.demoLink} target="_blank">
-            <button>Visit</button>
+            <div className="zoom">
+              <img
+                className="workPicture"
+                src={props.screenshot}
+                alt="sample picture of application"
+              ></img>
+            </div>
           </a>
-          <a href={props.githubLink} target="_blank">
-            <button>GitHub</button>
+        </Col>
+        <Col className="workRightContainer" lg={true}>
+          <a href={props.demoLink} target="_blank" className="workSubheading">
+            <h3>{props.title}</h3>
           </a>
-        </div>
-      </div>
-    </article>
+          <p>{props.description}</p>
+          <div className="workButtonContainer">
+            <a href={props.demoLink} target="_blank">
+              <button>Visit</button>
+            </a>
+            <a href={props.githubLink} target="_blank">
+              <button>GitHub</button>
+            </a>
+          </div>
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

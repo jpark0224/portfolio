@@ -86,14 +86,15 @@ const Hero: React.FC = () => {
           />
         </Col>
       </Row>
-      <Row className="heroScrollContainer">
-        <section className="scrollButton">
-          <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
+      <Row className="scrollButton">
+        <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
+          <div className="arrowContainer">
             <span></span>
             <span></span>
-            <span></span>Scroll
-          </Link>
-        </section>
+            <span></span>
+          </div>
+          <p>Scroll</p>
+        </Link>
       </Row>
     </Container>
   );

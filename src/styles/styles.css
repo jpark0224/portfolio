@@ -1,5 +1,6 @@
 html {
   font-size: calc(11px + 0.390625vw);
+  background-color: #f0e1de;
 }
 
 button {
@@ -40,10 +41,35 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .langIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
+  .langIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  .zoom {
+    width: 70vw;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .zoom:hover img {
+    transform: scale(1.1);
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -57,6 +83,27 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     align-items: center;
     justify-content: center;
     order: 1;
+  }
+
+  .langIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  .zoom {
+    width: 70vw;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .zoom:hover img {
+    transform: scale(1.1);
   }
 }
 
@@ -72,6 +119,27 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     justify-content: center;
     order: 1;
   }
+
+  .langIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  .zoom {
+    width: 40vw;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .zoom:hover img {
+    transform: scale(1.1);
+  }
 }
 
 /* Extra extra large devices (extra large desktops, 1400px and up) */
@@ -84,5 +152,26 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .langIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  .zoom {
+    width: 40vw;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .zoom:hover img {
+    transform: scale(1.1);
   }
 }
