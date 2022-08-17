@@ -140,6 +140,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .zoom:hover img {
     transform: scale(1.1);
   }
+
+  .toTheTopButton {
+    position: relative;
+    top: 20vh !important;
+  }
 }
 
 /* Extra extra large devices (extra large desktops, 1400px and up) */
@@ -173,5 +178,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
   .zoom:hover img {
     transform: scale(1.1);
+  }
+
+  .toTheTopButton {
+    position: relative;
+    top: 20vh !important;
   }
 }

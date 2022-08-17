@@ -198,15 +198,16 @@ const Contacts = () => {
           </Form>
         </Col>
       </Row>
-      <section className="toTheTopContainer">
-        <section className="toTheTopButton">
-          <Link to="hero" spy={true} smooth={true} offset={-70} duration={500}>
+      <Row className="toTheTopButton">
+        <Link to="hero" spy={true} smooth={true} offset={-70} duration={500}>
+          <div className="arrowContainer">
             <span></span>
             <span></span>
-            <span></span>To the top
-          </Link>
-        </section>
-      </section>
+            <span></span>
+          </div>
+          <p>To the top</p>
+        </Link>
+      </Row>
     </Container>
   );
 };
