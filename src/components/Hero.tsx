@@ -2,24 +2,50 @@ import React from "react";
 
 import "../styles/Hero.css";
 import { Link } from "react-scroll";
-import { Container } from "react-bootstrap";
+import { Container, Col, Row } from "react-bootstrap";
 import ProfilePic from "../assets/profile-6.png";
 import { useParallax } from "react-scroll-parallax";
+import { useEffect, useState } from "react";
 
 const Hero: React.FC = () => {
+  const [parallaxDisabled, setParallaxDisabled] = useState(true);
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
   const parallaxLeft = useParallax({
+    disabled: parallaxDisabled,
     translateX: [100, -80],
   });
 
   const parallaxRight = useParallax({
+    disabled: parallaxDisabled,
     translateX: [-100, 80],
     rootMargin: { top: 0, right: 0, bottom: 0, left: 0 },
   });
 
+  const handleResize = () => {
+    setScreenWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.addEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (screenWidth < 768) {
+      setParallaxDisabled(true);
+    } else {
+      setParallaxDisabled(false);
+    }
+    // console.log(screenWidth, parallaxDisabled);
+  });
+
   return (
     <Container fluid className="heroContainer">
-      <section className="heroMainContainer">
-        <section
+      <Row className="heroMainContainer">
+        <Col
           className="heroLeftContainer"
           ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
         >
@@ -49,8 +75,10 @@ const Hero: React.FC = () => {
               </Link>
             </div>
           </div>
-        </section>
-        <section
+        </Col>
+        <Col
+          xs={{ order: "first" }}
+          sm={{ order: "first" }}
           className="heroRightContainer"
           ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
         >
@@ -59,9 +87,9 @@ const Hero: React.FC = () => {
             alt="profile picture"
             className="profilePicture"
           />
-        </section>
-      </section>
-      <section className="heroScrollContainer">
+        </Col>
+      </Row>
+      <Row className="heroScrollContainer">
         <section className="scrollButton">
           <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
             <span></span>
@@ -69,7 +97,7 @@ const Hero: React.FC = () => {
             <span></span>Scroll
           </Link>
         </section>
-      </section>
+      </Row>
     </Container>
   );
 };

@@ -1,3 +1,7 @@
+html {
+  font-size: calc(11px + 0.390625vw);
+}
+
 button {
   cursor: pointer;
   outline: 0;
@@ -23,3 +27,104 @@ button:hover {
   background-color: #a66363;
   border-color: #a66363;
 }
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 5 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* 
+@media (min-width: 1px) {
+  .heroLeftContainer,
+  .heroRightContainer,
+  .aboutText,
+  .langIconsContainer,
+  .langTextContainer,
+  .contactsLeftContainer,
+  .contactsElementsContainer,
+  .singleWorkContainer {
+    will-change: unset !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+/* @media (min-width: 576px) {
+  .heroLeftContainer,
+  .heroRightContainer,
+  .aboutText,
+  .langIconsContainer,
+  .langTextContainer,
+  .contactsLeftContainer,
+  .contactsElementsContainer,
+  .singleWorkContainer {
+    will-change: unset !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+} */
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+/* @media (min-width: 768px) {
+  .heroLeftContainer,
+  .heroRightContainer,
+  .aboutText,
+  .langIconsContainer,
+  .langTextContainer,
+  .contactsLeftContainer,
+  .contactsElementsContainer,
+  .singleWorkContainer {
+    will-change: unset !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+} */
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) {
+  .heroLeftContainer,
+  .heroRightContainer,
+  .aboutText,
+  .langIconsContainer,
+  .langTextContainer,
+  .contactsLeftContainer,
+  .contactsElementsContainer,
+  .singleWorkContainer {
+    will-change: transform !important;
+    transform: revert !important;
+    opacity: revert !important;
+  }
+} */
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) {
+  .heroLeftContainer,
+  .heroRightContainer,
+  .aboutText,
+  .langIconsContainer,
+  .langTextContainer,
+  .contactsLeftContainer,
+  .contactsElementsContainer,
+  .singleWorkContainer {
+    will-change: inherit !important;
+  }
+} */
+
+/* Extra extra large devices (extra large desktops, 1400px and up) */
+/* @media (min-width: 1400px) {
+  .heroLeftContainer,
+  .heroRightContainer,
+  .aboutText,
+  .langIconsContainer,
+  .langTextContainer,
+  .contactsLeftContainer,
+  .contactsElementsContainer,
+  .singleWorkContainer {
+    will-change: inherit !important;
+  }
+}  */

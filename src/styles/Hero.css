@@ -45,6 +45,7 @@
 
 .profilePicture {
   width: 25vw;
+  min-width: 150px;
 }
 
 .heroHeading {

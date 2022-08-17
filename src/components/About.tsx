@@ -24,7 +24,10 @@ const About = () => {
       <section className="aboutLeftContainer">
         <div className="aboutLeftContents">
           <h1 className="aboutHeading">About Me</h1>
-          <div ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}>
+          <div
+            className="aboutText"
+            ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
+          >
             <p>
               Hello! I am Julie, Junior Full-stack Web Developer who finished
               General Assembly's Software Engineering Immersive course in May
