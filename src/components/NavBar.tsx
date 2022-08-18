@@ -29,7 +29,7 @@ function NavBar() {
 
   const navBar = useRef<HTMLElement>(null);
   window.onscroll = function () {
-    if (scrollPosition < 1) {
+    if (scrollPosition < 10) {
       setNavBarClass(" navBarNoShadow");
     } else {
       setNavBarClass(" navBarShadow");

@@ -150,48 +150,57 @@ const Contacts = () => {
           ref={parallaxRight.ref as React.RefObject<HTMLDivElement>}
         >
           <Form onSubmit={submitHandler} className="formContainer">
-            <Stack direction="horizontal" gap={3}>
-              <Form.Group className="formGroup" controlId="name">
+            <Row>
+              <Col>
+                <Form.Group className="formGroup" controlId="name">
+                  <Stack gap={2}>
+                    <label className="formLabels">NAME</label>
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="John Doe / Jane Doe"
+                    />
+                  </Stack>
+                </Form.Group>
+              </Col>
+              <Col>
+                <Form.Group className="formGroup" controlId="email">
+                  <Stack gap={2}>
+                    <label className="formLabels">EMAIL ADDRESSS</label>
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="name@example.com"
+                    />
+                  </Stack>
+                </Form.Group>
+              </Col>
+            </Row>
+            <Row>
+              <Form.Group className="formGroup" controlId="subject">
                 <Stack gap={2}>
-                  <label className="formLabels">NAME</label>
+                  <label className="formLabels">SUBJECT</label>
                   <input
                     type="text"
-                    name="name"
-                    placeholder="John Doe / Jane Doe"
+                    name="subject"
+                    placeholder="Let's work together"
                   />
                 </Stack>
               </Form.Group>
-              <Form.Group className="formGroup" controlId="email">
+            </Row>
+
+            <Row>
+              <Form.Group className="formGroup" controlId="message">
                 <Stack gap={2}>
-                  <label className="formLabels">EMAIL ADDRESSS</label>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="name@example.com"
+                  <label className="formLabels">MESSAGE</label>
+                  <textarea
+                    className="message"
+                    name="message"
+                    placeholder="Write something..."
                   />
                 </Stack>
               </Form.Group>
-            </Stack>
-            <Form.Group className="formGroup" controlId="subject">
-              <Stack gap={2}>
-                <label className="formLabels">SUBJECT</label>
-                <input
-                  type="text"
-                  name="subject"
-                  placeholder="Let's work together"
-                />
-              </Stack>
-            </Form.Group>
-            <Form.Group className="formGroup" controlId="message">
-              <Stack gap={2}>
-                <label className="formLabels">MESSAGE</label>
-                <textarea
-                  className="message"
-                  name="message"
-                  placeholder="Write something..."
-                />
-              </Stack>
-            </Form.Group>
+            </Row>
             <button className="submitButton" type="submit">
               Send Message
             </button>

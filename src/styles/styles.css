@@ -78,6 +78,70 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     align-items: flex-start;
   }
 
+  .langIcon {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+
+  .zoom {
+    width: 70vw;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .zoom:hover img {
+    transform: scale(1.1);
+  }
+
+  .navBar {
+    height: 56px;
+  }
+
+  .navBarShadow {
+    background-color: #f0e1ded0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  }
+
+  .menuContainer {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    padding-bottom: 0 !important;
+  }
+
+  .navItem:after {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: "";
+    color: transparent;
+    background: #bf7373;
+    height: 3px;
+  }
+
+  .navLinksContainer {
+    margin-left: 30px;
+  }
+}
+
+/* for hero page order */
+@media (min-width: 1116px) {
+  .heroLeftContainer > .heroLeftContents {
+    align-items: flex-start;
+  }
+
   .heroRightContainer {
     display: flex;
     align-items: center;
@@ -106,6 +170,23 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     transform: scale(1.1);
   }
 
+  .navBar {
+    height: 56px;
+  }
+
+  .navBarShadow {
+    background-color: #f0e1ded0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  }
+
+  .menuContainer {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    padding-bottom: 0 !important;
+  }
   .navItem:after {
     position: absolute;
     top: 40px;
@@ -164,6 +245,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     top: 20vh !important;
   }
 
+  .navBar {
+    height: 56px;
+  }
+
+  .navBarShadow {
+    background-color: #f0e1ded0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  }
+
+  .menuContainer {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    padding-bottom: 0 !important;
+  }
+
   .navItem:after {
     position: absolute;
     top: 40px;
@@ -219,6 +318,24 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .toTheTopButton {
     position: relative;
     top: 20vh !important;
+  }
+
+  .navBar {
+    height: 56px;
+  }
+
+  .navBarShadow {
+    background-color: #f0e1ded0;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+  }
+
+  .menuContainer {
+    background-color: transparent !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    padding-bottom: 0 !important;
   }
 
   .navItem:after {
