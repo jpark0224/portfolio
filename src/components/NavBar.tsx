@@ -29,7 +29,7 @@ function NavBar() {
 
   const navBar = useRef<HTMLElement>(null);
   window.onscroll = function () {
-    if (scrollPosition < 30) {
+    if (scrollPosition < 1) {
       setNavBarClass(" navBarTransparent");
     } else {
       setNavBarClass(" navBarBlurry");
@@ -42,6 +42,7 @@ function NavBar() {
 
   return (
     <Navbar
+      collapseOnSelect
       expand="lg"
       fixed="top"
       className={"navBar" + navBarClass}
@@ -60,7 +61,10 @@ function NavBar() {
         <Navbar.Brand onClick={scrollToTop} className="navBarBrand">
           Julie Park
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          id="navBarToggler"
+        />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav
             className="justify-content-end menuContainer"

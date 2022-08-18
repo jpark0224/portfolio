@@ -2,6 +2,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.navbar-nav {
+  text-align: center;
+}
+
 .navBarTransparent {
   background-color: transparent;
 }
@@ -26,6 +30,10 @@
   font-size: 19px;
 }
 
+#navBarToggler {
+  min-width: initial;
+}
+
 .menuContainer {
   gap: 20px;
 }
@@ -35,7 +43,6 @@
   gap: 20px;
   align-items: center;
   justify-content: center;
-  margin-left: 30px;
 }
 
 .navLinks {
@@ -67,20 +74,6 @@ a {
 .navItem:hover {
   color: #bf7373;
   font-weight: bold;
-}
-
-.navItem:after {
-  position: absolute;
-  top: 40px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: "";
-  color: transparent;
-  background: #bf7373;
-  height: 3px;
 }
 
 .navItem:hover:after {
