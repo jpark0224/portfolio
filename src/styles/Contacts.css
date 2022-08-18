@@ -101,6 +101,22 @@ textarea {
   align-self: center;
 }
 
+.modal-content {
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal-header {
+  color: #bf7373;
+}
+
+.checkIcon {
+  margin-right: 5px;
+}
+
+.modal-header .btn-close {
+  min-width: initial;
+}
+
 /* scroll up button */
 .toTheTopButton {
   position: relative;

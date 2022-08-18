@@ -58,33 +58,36 @@ const About: React.FC = () => {
               ref={parallaxLeft.ref as React.RefObject<HTMLDivElement>}
             >
               <p>
-                Hello! I am Julie, Junior Full-stack Web Developer who finished
-                General Assembly's Software Engineering Immersive course in May
-                2022.
+                Hello! I am <span> Julie</span>,{" "}
+                <span>Junior Full-stack Web Developer </span>
+                who finished General Assembly's Software Engineering Immersive
+                course in May 2022.
                 {/* My interest in web development started back in the early
               2000s when I built a fan page, which taught me the basics of HTML
               and JavaScript. */}
               </p>
 
               <p>
-                I am passionate in tackling real-life problems through
-                technologies. My focus is to build products that empowers
-                service users by providing accessible and cost-effective
-                services with reduced admin burden and the need for physical
-                presence.
+                I am passionate in tackling <span>real-life problems </span>
+                through technologies. My focus is to build products that
+                <span> empowers service users</span> by providing accessible and
+                cost-effective services with reduced admin burden and the need
+                for physical presence.
               </p>
 
               <p>
-                Prior to my current role, I've worked as a Social Worker and
-                Psychotherapist, helping over a hundred of patients to overcome
-                challenges in their lives by arranging care and providing
-                talking therapies — which skill set I am excited to bring over
-                to the world of technologies.
+                Prior to my current role, I've worked as a
+                <span> Social Worker </span> and <span>Psychotherapist </span>
+                in
+                <span> NHS </span> and <span>New York hospitals </span>, helping
+                over a hundred of patients to overcome challenges in their lives
+                by arranging care and providing talking therapies — which skill
+                set I am excited to bring over to the world of technologies.
               </p>
 
               <p>
-                Please don't hesitate to contact me if you think my skills and
-                experience are a good match.
+                Please don't hesitate to <span>contact me </span> if you think
+                my skills and experience are a good match.
               </p>
             </div>
           </div>

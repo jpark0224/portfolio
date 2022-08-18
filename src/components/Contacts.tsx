@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Container, Form, Row, Col, Stack } from "react-bootstrap";
+import { Container, Form, Row, Col, Stack, Modal } from "react-bootstrap";
 import { Link } from "react-scroll";
 import { useParallax } from "react-scroll-parallax";
 import { useEffect, useState } from "react";
@@ -15,6 +15,10 @@ dotenv.config();
 const Contacts = () => {
   const [parallaxDisabled, setParallaxDisabled] = useState(true);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const parallaxLeft = useParallax({
     disabled: parallaxDisabled,
@@ -201,9 +205,32 @@ const Contacts = () => {
                 </Stack>
               </Form.Group>
             </Row>
-            <button className="submitButton" type="submit">
+            <button className="submitButton" type="submit" onClick={handleShow}>
               Send Message
             </button>
+
+            <Modal show={show} onHide={handleClose} centered>
+              <Modal.Header closeButton>
+                <Modal.Title>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                    className="checkIcon"
+                  >
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                  </svg>
+                  Thank you!
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body>
+                <p>Your message has been successfully sent. </p>
+                <p>I will contact you very soon!</p>
+              </Modal.Body>
+            </Modal>
           </Form>
         </Col>
       </Row>

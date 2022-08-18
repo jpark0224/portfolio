@@ -23,11 +23,11 @@ button {
   min-width: 120px;
 }
 
-button:hover {
+/* button:hover {
   color: #fff;
   background-color: #a66363;
   border-color: #a66363;
-}
+} */
 
 button:focus {
   color: #fff;
@@ -91,6 +91,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 992px) {
   .heroLeftContainer > .heroLeftContents {
     align-items: flex-start;
+    min-width: 400px;
   }
 
   .langIcon {
@@ -159,6 +160,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 1116px) {
   .heroLeftContainer > .heroLeftContents {
     align-items: flex-start;
+    min-width: 400px;
   }
 
   .heroRightContainer {
@@ -229,6 +231,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 1200px) {
   .heroLeftContainer > .heroLeftContents {
     align-items: flex-start;
+    min-width: 400px;
   }
 
   .heroRightContainer {
@@ -305,6 +308,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 @media (min-width: 1400px) {
   .heroLeftContainer > .heroLeftContents {
     align-items: flex-start;
+    min-width: 420px;
   }
 
   .heroRightContainer {

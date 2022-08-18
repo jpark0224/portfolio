@@ -98,7 +98,7 @@ function NavBar() {
               offset={0}
               duration={500}
             >
-              <div className="navItem">Contacts</div>
+              <div className="navItem">Contact</div>
             </Link>
             <div className="navLinksContainer">
               <a href="https://www.linkedin.com/in/julie-park-developer/">
