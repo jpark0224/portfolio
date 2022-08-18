@@ -9,6 +9,7 @@ import WorkCardFullStack from "./WorkCardFullStack";
 import BabyShark from "../assets/baby-shark.png";
 import FindMeADoc from "../assets/find-me-a-doc.png";
 import SpaceCalendar from "../assets/space-calendar.png";
+import Portfolio from "../assets/portfolio-desktop-mobile.png";
 
 const Work: React.FC = () => {
   return (
@@ -43,6 +44,15 @@ const Work: React.FC = () => {
         }
         demoLink={"https://spacepicturecalendar.netlify.app/"}
         githubLink={"https://github.com/jpark0224/project-2"}
+      />
+      <WorkCardFrontEnd
+        screenshot={Portfolio}
+        title={"Portfolio Website"}
+        description={
+          "A fully responsive single-page application built with React, TypeScript, and Bootstrap."
+        }
+        demoLink={"https://juliepark.dev"}
+        githubLink={"https://github.com/jpark0224/portfolio"}
       />
     </Container>
   );

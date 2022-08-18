@@ -62,32 +62,21 @@ const About: React.FC = () => {
                 <span>Junior Full-stack Web Developer </span>
                 who finished General Assembly's Software Engineering Immersive
                 course in May 2022.
-                {/* My interest in web development started back in the early
-              2000s when I built a fan page, which taught me the basics of HTML
-              and JavaScript. */}
               </p>
 
               <p>
-                I am passionate in tackling <span>real-life problems </span>
-                through technologies. My focus is to build products that
-                <span> empowers service users</span> by providing accessible and
-                cost-effective services with reduced admin burden and the need
-                for physical presence.
+                I am passionate about <span>tackling real-life problems </span>
+                through technology. Prior to my current role, I was an
+                accredited <span>Psychotherapist</span> and{" "}
+                <span>Social Worker</span> with experience in both{" "}
+                <span>New York</span> and London <span>NHS hospitals.</span>
               </p>
 
               <p>
-                Prior to my current role, I've worked as a
-                <span> Social Worker </span> and <span>Psychotherapist </span>
-                in
-                <span> NHS </span> and <span>New York hospitals </span>, helping
-                over a hundred of patients to overcome challenges in their lives
-                by arranging care and providing talking therapies — which skill
-                set I am excited to bring over to the world of technologies.
-              </p>
-
-              <p>
-                Please don't hesitate to <span>contact me </span> if you think
-                my skills and experience are a good match.
+                My dream is to harness my experience in patient-centric care to{" "}
+                <span>empower</span> users by providing <span>accessible</span>{" "}
+                and <span>cost-effective</span> services that meet today's needs
+                for scalable, remote and interconnected services.
               </p>
             </div>
           </div>
