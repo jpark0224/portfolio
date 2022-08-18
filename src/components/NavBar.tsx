@@ -11,7 +11,7 @@ import GithubLogo from "../assets/github.png";
 import logo from "../assets/logo.png";
 
 function NavBar() {
-  const [navBarClass, setNavBarClass] = useState("");
+  const [navBarClass, setNavBarClass] = useState(" navBarNoShadow");
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScroll = () => {
@@ -30,9 +30,9 @@ function NavBar() {
   const navBar = useRef<HTMLElement>(null);
   window.onscroll = function () {
     if (scrollPosition < 1) {
-      setNavBarClass(" navBarTransparent");
+      setNavBarClass(" navBarNoShadow");
     } else {
-      setNavBarClass(" navBarBlurry");
+      setNavBarClass(" navBarShadow");
     }
   };
 
