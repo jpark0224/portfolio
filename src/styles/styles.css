@@ -29,10 +29,25 @@ button:hover {
   border-color: #a66363;
 }
 
+button:focus {
+  color: #fff;
+  background-color: #a66363;
+  border-color: #a66363;
+}
+
 /*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 Bootstrap 5 breakpoints
 */
+
+/* prevent sticky hover effects for buttons on touch devices */
+@media (hover: hover) {
+  button:hover {
+    color: #fff;
+    background-color: #a66363;
+    border-color: #a66363;
+  }
+}
 
 /* 
 Extra small devices (portrait phones, less than 576px) 
