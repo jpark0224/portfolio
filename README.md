@@ -1,46 +1,76 @@
-# Getting Started with Create React App
+# Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully responsive single-page application built with React, TypeScript, and Bootstrap.
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Known issues and limitations](#known-issues-and-limitations)
+- [Getting help](#getting-help)
+- [Contributing](#contributing)
+- [License](#license)
+- [Authors and history](#authors-and-history)
+- [Acknowledgments](#acknowledgments)
 
-### `npm start`
+## ✨ Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Built With
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-### `npm test`
+- [![Next][next.js]][next-url]
+- [![React][react.js]][react-url]
+- [![Vue][vue.js]][vue-url]
+- [![Angular][angular.io]][angular-url]
+- [![Svelte][svelte.dev]][svelte-url]
+- [![Laravel][laravel.com]][laravel-url]
+- [![Bootstrap][bootstrap.com]][bootstrap-url]
+- [![JQuery][jquery.com]][jquery-url]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Introduction
 
-### `npm run build`
+This single-file repository consists of a README file in Markdown format, and is meant to provide a template for README files as well an illustration of what the README file can be expected to look like. The structure of this file is based on examining many examples and recommendations for README files, as well as this author's own experiences of creating many open-source projects and repositories over three decades.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The [Introduction](#introduction) section &ndash; which you are presently reading &ndash; should provide background for your software project, a brief explanation of what the project is about, and optionally, pointers to resources that can help orient readers. (Some README recommendations go straight to installation instructions as the first section, but in my opinion, introductions are important for readers who are not familiar with your technical area.) Ideally, this section should be short.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Roadmap
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+  - [ ] Chinese
+  - [ ] Spanish
 
-### `npm run eject`
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Known issues and limitations
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+In this section, summarize any notable issues and/or limitations of your software. If none are known yet, this section can be omitted (and don't forget to remove the corresponding entry in the [Table of Contents](#table-of-contents) too); alternatively, you can leave this section in and write something along the lines of "none are known at this time".
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Getting help
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Inform readers of how they can contact you, or at least how they can report problems they may encounter. This may simply be a request to use the issue tracker on your repository, but many projects have associated chat or mailing lists, and this section is a good place to mention those.
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Mention how people can offer contributions, and point them to your guidelines for contributing.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+This README file is distributed under the terms of the [Creative Commons 1.0 Universal license (CC0)](https://creativecommons.org/publicdomain/zero/1.0/). The license applies to this file and other files in the [GitHub repository](http://github.com/mhucka/readmine) hosting this file. This does _not_ mean that you, as a user of this README file in your software project, must also use CC0 license! You may use any license for your work that you see fit.
+
+## Author
+
+👤 **Julie Park**
+
+- LinkedIn: [@julie-park-developer](https://www.linkedin.com/in/julie-park-developer/)
+- Github: [@jpark0224](https://github.com/jpark0224)
+
+## 📝 License
+
+Copyright © 2022 [Julie Park](https://github.com/jpark0224).<br />
+This project is [MIT](https://github.com/jpark0224/portfolio/blob/main/LICENSE) licensed.
