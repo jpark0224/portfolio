@@ -4,64 +4,71 @@ A fully responsive single-page application built with React, TypeScript, and Boo
 
 ## Table of contents
 
+- [Demo](#Demo)
 - [Introduction](#introduction)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Process](#process)
+- [Challenges and Wins](#challenges-and-wins)
 - [Known issues and limitations](#known-issues-and-limitations)
-- [Getting help](#getting-help)
-- [Contributing](#contributing)
+- [Future improvements](#future-improvements)
+- [Key learnings](#key-learnings)
+- [Author](#author)
 - [License](#license)
-- [Authors and history](#authors-and-history)
-- [Acknowledgments](#acknowledgments)
 
-## ✨ Demo
+## ✨ [Demo](https://juliepark.dev/)
 
-### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [![Next][next.js]][next-url]
-- [![React][react.js]][react-url]
-- [![Vue][vue.js]][vue-url]
-- [![Angular][angular.io]][angular-url]
-- [![Svelte][svelte.dev]][svelte-url]
-- [![Laravel][laravel.com]][laravel-url]
-- [![Bootstrap][bootstrap.com]][bootstrap-url]
-- [![JQuery][jquery.com]][jquery-url]
+The website has been deployed with Netlify and connected to a [custom domain](https://juliepark.dev/).
 
 ## Introduction
 
-This single-file repository consists of a README file in Markdown format, and is meant to provide a template for README files as well an illustration of what the README file can be expected to look like. The structure of this file is based on examining many examples and recommendations for README files, as well as this author's own experiences of creating many open-source projects and repositories over three decades.
+### Goal and timeframe
 
-The [Introduction](#introduction) section &ndash; which you are presently reading &ndash; should provide background for your software project, a brief explanation of what the project is about, and optionally, pointers to resources that can help orient readers. (Some README recommendations go straight to installation instructions as the first section, but in my opinion, introductions are important for readers who are not familiar with your technical area.) Ideally, this section should be short.
+To build a portfolio website with React, Typescript, and Bootstrap in 3 weeks after work.
 
-## Roadmap
+### Built with
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
+- HTML5
+- CSS3
+- TypeScript
+- React 18
+- Bootstrap 5
+- Libraries
+  - React Scroll Parallax
+  - React-Scroll
+  - EmailJS
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+## Process
+
+### Checklist
+
+- [x] Apply one page scrolling
+- [x] Apply parallax scrolling effects
+- [x] Add a contact form
+- [x] Apply Responsive Web Design (RWD)
+- [x] Add scroll down and to the top buttons
+- [x] Add a logo
+- [x] Deploy and connect to a custom domain
+- [x] Add a modal for contact form submission
+- [ ] Apply animations
+- [ ] Improve performance
+
+## Challenges and wins
+
+### Challenges
+
+### Wins
 
 ## Known issues and limitations
 
-In this section, summarize any notable issues and/or limitations of your software. If none are known yet, this section can be omitted (and don't forget to remove the corresponding entry in the [Table of Contents](#table-of-contents) too); alternatively, you can leave this section in and write something along the lines of "none are known at this time".
+- Z-index of a dropdown button doesn’t work with other elements with Parallax effect.
+- Typing effect on a hero page sometimes cause the parent container to expand.
 
-## Getting help
+## Future improvements
 
-Inform readers of how they can contact you, or at least how they can report problems they may encounter. This may simply be a request to use the issue tracker on your repository, but many projects have associated chat or mailing lists, and this section is a good place to mention those.
+- Implementation of GSAP to animate the website.
+- Implementation of a back-end for receiving emails through a contact form, rather than using an existing library.
+- Improvement of performance
 
-## Contributing
-
-Mention how people can offer contributions, and point them to your guidelines for contributing.
-
-## License
-
-This README file is distributed under the terms of the [Creative Commons 1.0 Universal license (CC0)](https://creativecommons.org/publicdomain/zero/1.0/). The license applies to this file and other files in the [GitHub repository](http://github.com/mhucka/readmine) hosting this file. This does _not_ mean that you, as a user of this README file in your software project, must also use CC0 license! You may use any license for your work that you see fit.
+## Key learnings
 
 ## Author
 
