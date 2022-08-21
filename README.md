@@ -20,9 +20,7 @@ The website has been deployed with Netlify and connected to a [custom domain](ht
 
 ## Introduction
 
-### Goal and timeframe
-
-To build a portfolio website with React, Typescript, and Bootstrap in 3 weeks after work.
+A portfolio website that showcases my achievements and projects. This was my first project built with TypeScript and was designed responsive across all devices. The project took 1 week of web design and 2 weeks of coding after work. The website has been deployed with Netlify and connected to a custom domain: https://juliepark.dev/.
 
 ### Built with
 
@@ -37,6 +35,23 @@ To build a portfolio website with React, Typescript, and Bootstrap in 3 weeks af
   - EmailJS
 
 ## Process
+
+### Planning
+
+- Wireframing
+  - I started the project by building a wireframe of the website. Figma was used. The link of the wireframe is below: https://www.figma.com/file/9130RETN6VcUI1YasFXWy6/Portfolio-Wireframe
+  - I had one week to design my website. My objectives were to make the website which 1) is esthetically pleasing without compromising the performance 2) provides all the information at a glance 3) is easy to navigate.
+  - I researched portfolio websites made by experienced developers. This helped me come up with the basic structure and design of the website.
+  - Pinterest was used to research static website design references.
+  - Coolers and Adobe Color were used to choose the colour palette of the website.
+  - I found it significantly easier to build a website with concrete images of the final product established.
+- Project management
+  - OneNote was used throughout the process to organise ideas and keep track of a checklist of tasks to complete and to be completed.
+- Structuring React folders
+  - Made three folders in the src folder: assets, styles, and components.
+  - Made separate components per page.
+  - Made separate css files per page. In my previous projects, I used one css file for all the components which made it difficult to find a class or id when I wanted to change the style. Having separate css files made it much easier to navigate.
+  - Made one styles.css file for styles applied throughout the website
 
 ### Checklist
 
