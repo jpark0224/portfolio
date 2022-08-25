@@ -55,7 +55,7 @@ const Contacts = () => {
 
     const target = event.target as HTMLFormElement;
 
-    console.log(target);
+    // console.log(target);
 
     emailjs
       .sendForm(
