@@ -1,13 +1,15 @@
 # Portfolio
 
+![insta](https://user-images.githubusercontent.com/86682774/186793531-62fb14b5-b081-4dfa-9d08-5069e0b6c63d.gif)
+
 A fully responsive single-page application built with React, TypeScript, and Bootstrap.
 
 ## Table of contents
 
-- [Demo](#Demo)
+- [Demo](#demo)
 - [Introduction](#introduction)
 - [Process](#process)
-- [Challenges and Wins](#challenges-and-wins)
+- [Challenges and wins](#challenges-and-wins)
 - [Known issues and limitations](#known-issues-and-limitations)
 - [Future improvements](#future-improvements)
 - [Author](#author)
