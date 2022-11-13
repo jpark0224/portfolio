@@ -10,6 +10,7 @@ import BabyShark from "../assets/baby-shark.png";
 import FindMeADoc from "../assets/find-me-a-doc.png";
 import SpaceCalendar from "../assets/space-calendar.png";
 import Portfolio from "../assets/portfolio-desktop-mobile.png";
+import GighubSocial from "../assets/gighub-social.png";
 
 const Work: React.FC = () => {
   return (
@@ -35,6 +36,16 @@ const Work: React.FC = () => {
           "https://github.com/jpark0224/project-3-findMeADoc-front-end"
         }
         githubBELink={"https://github.com/jpark0224/FindMeADoc"}
+      />
+      <WorkCardFullStack
+        screenshot={GighubSocial}
+        title={"Gighub Social"}
+        description={
+          "A React Web Application with Django REST framework. A social media platform where rock fans and bands can connect."
+        }
+        demoLink={"https://gighubsocial.netlify.app/"}
+        githubFELink={"https://github.com/jpark0224/gighub_frontend/"}
+        githubBELink={"https://github.com/jpark0224/gighub_backend/"}
       />
       <WorkCardFrontEnd
         screenshot={SpaceCalendar}
